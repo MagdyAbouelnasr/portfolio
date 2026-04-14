@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#071015" />
+  <rect x="68" y="68" width="1064" height="494" rx="34" fill="url(#paint0_linear)" stroke="rgba(255,255,255,0.12)" />
+  <path d="M168 170H450" stroke="#8EE3D5" stroke-width="4" stroke-linecap="round" />
+  <path d="M168 228H680" stroke="#2A3941" stroke-width="2" />
+  <path d="M168 264H620" stroke="#2A3941" stroke-width="2" />
+  <path d="M810 180H1018V294H810V180Z" stroke="#8EE3D5" stroke-opacity=".7" />
+  <path d="M760 348H1034V468H760V348Z" stroke="#FFB66B" stroke-opacity=".7" />
+  <path d="M770 240C824 240 842 300 892 300C940 300 954 228 1018 228" stroke="#F3F3EE" stroke-width="3" />
+  <circle cx="770" cy="240" r="10" fill="#8EE3D5" />
+  <circle cx="892" cy="300" r="10" fill="#F3F3EE" />
+  <circle cx="1018" cy="228" r="10" fill="#FFB66B" />
+  <text x="168" y="360" fill="#F3F3EE" font-family="Arial, sans-serif" font-size="66" font-weight="700">
+    Mohamed Abouelnasr
+  </text>
+  <text x="168" y="430" fill="#C7EFE7" font-family="Arial, sans-serif" font-size="34">
+    Senior Frontend Engineer
+  </text>
+  <text x="168" y="486" fill="#B7C7CC" font-family="Arial, sans-serif" font-size="24">
+    Systems, motion, and craft for product-grade frontend work
+  </text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="600" x2="600" y1="68" y2="562" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1A21" />
+      <stop offset="1" stop-color="#091218" />
+    </linearGradient>
+  </defs>
+</svg>
