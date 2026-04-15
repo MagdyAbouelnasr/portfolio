@@ -4,6 +4,11 @@ export function useActiveSection(sectionIds: string[]) {
   const [activeSection, setActiveSection] = useState(sectionIds[0] ?? '')
 
   useEffect(() => {
+    if (!sectionIds.length) {
+      setActiveSection('')
+      return
+    }
+
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter((section): section is HTMLElement => Boolean(section))
@@ -12,24 +17,61 @@ export function useActiveSection(sectionIds: string[]) {
       return
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
+    const header = document.querySelector<HTMLElement>('[data-site-header]')
+    let frame = 0
 
-        if (visible?.target.id) {
-          setActiveSection(visible.target.id)
+    const getTrackingLine = () => {
+      const viewportHeight = window.innerHeight || 1
+      const headerBottom = header?.getBoundingClientRect().bottom ?? 0
+
+      return Math.min(Math.max(headerBottom + 24, viewportHeight * 0.34), viewportHeight * 0.46)
+    }
+
+    const updateActiveSection = () => {
+      const trackingLine = getTrackingLine()
+      let nextSection = sections[0]
+      let smallestDistance = Number.POSITIVE_INFINITY
+
+      for (const section of sections) {
+        const rect = section.getBoundingClientRect()
+        const containsTrackingLine = rect.top <= trackingLine && rect.bottom >= trackingLine
+        const distance = containsTrackingLine
+          ? 0
+          : Math.min(Math.abs(rect.top - trackingLine), Math.abs(rect.bottom - trackingLine))
+
+        if (distance < smallestDistance) {
+          nextSection = section
+          smallestDistance = distance
         }
-      },
-      {
-        rootMargin: '-20% 0px -55% 0px',
-        threshold: [0.2, 0.35, 0.55],
-      },
-    )
+      }
 
-    sections.forEach((section) => observer.observe(section))
-    return () => observer.disconnect()
+      setActiveSection((current) => (current === nextSection.id ? current : nextSection.id))
+    }
+
+    const requestUpdate = () => {
+      cancelAnimationFrame(frame)
+      frame = window.requestAnimationFrame(updateActiveSection)
+    }
+
+    const resizeObserver = new ResizeObserver(() => {
+      requestUpdate()
+    })
+
+    sections.forEach((section) => resizeObserver.observe(section))
+    if (header) {
+      resizeObserver.observe(header)
+    }
+
+    requestUpdate()
+    window.addEventListener('scroll', requestUpdate, { passive: true })
+    window.addEventListener('resize', requestUpdate)
+
+    return () => {
+      cancelAnimationFrame(frame)
+      resizeObserver.disconnect()
+      window.removeEventListener('scroll', requestUpdate)
+      window.removeEventListener('resize', requestUpdate)
+    }
   }, [sectionIds])
 
   return activeSection

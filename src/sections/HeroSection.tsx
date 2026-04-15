@@ -48,7 +48,7 @@ export function HeroSection({ data }: HeroSectionProps) {
 
   return (
     <section
-      className="relative overflow-hidden px-4 pt-34 pb-14 sm:px-6 sm:pt-38 sm:pb-16 lg:px-10 lg:pt-36 lg:pb-22"
+      className="relative overflow-hidden px-4 pt-44 pb-14 sm:px-6 sm:pt-40 sm:pb-16 lg:px-10 lg:pt-36 lg:pb-22"
       id="top"
     >
       <div className="hero-noise pointer-events-none absolute inset-0 opacity-40" />
