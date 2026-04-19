@@ -484,6 +484,11 @@ export const portfolioData: PortfolioData = {
         value: 'linkedin.com/in/mohamed-abouelnasr/',
         href: 'https://www.linkedin.com/in/mohamed-abouelnasr/',
       },
+      {
+        label: 'Portfolio',
+        value: 'mmabouelnasr-portfolio.netlify.app',
+        href: 'https://mmabouelnasr-portfolio.netlify.app/',
+      },
     ],
   },
   contact: {

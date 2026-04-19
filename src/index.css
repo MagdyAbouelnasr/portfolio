@@ -115,6 +115,7 @@ a {
   width: 100%;
   height: 100%;
   opacity: 0.94;
+  pointer-events: none;
   mask-image:
     linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.18) 10%, black 28%, black 92%, transparent 100%),
     linear-gradient(180deg, rgba(0, 0, 0, 0.42), black 16%, black 88%, transparent 100%);
@@ -123,6 +124,7 @@ a {
 .page-signal-layer__canvas canvas {
   width: 100% !important;
   height: 100% !important;
+  pointer-events: none !important;
 }
 
 .page-signal-layer__fallback::before {
