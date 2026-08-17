@@ -32,8 +32,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
-        tagdeer: path.resolve(__dirname, 'projects/tagdeer-platform/index.html'),
-        tahkeem: path.resolve(__dirname, 'projects/tahkeem-case-lifecycle/index.html'),
+        commerce: path.resolve(__dirname, 'projects/commerce-platform/index.html'),
+        workflow: path.resolve(__dirname, 'projects/workflow-operations-platform/index.html'),
         hyperpay: path.resolve(__dirname, 'projects/ngx-hyperpay/index.html'),
       },
     },

@@ -44,7 +44,7 @@ export function SiteHeader({ navItems, activeSection, resumeUrl }: SiteHeaderPro
 
   return (
     <header
-      className="pointer-events-none fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-10"
+      className="pointer-events-none fixed inset-x-0 top-0 z-50 px-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6 sm:pt-4 lg:px-10"
       data-site-header
     >
       {!isProjectPage && isHomePage ? (
@@ -59,7 +59,7 @@ export function SiteHeader({ navItems, activeSection, resumeUrl }: SiteHeaderPro
 
       <div
         className={cn(
-          'pointer-events-auto mx-auto flex max-w-[1320px] items-center justify-between gap-3 rounded-full px-4 py-3 backdrop-blur-2xl transition-[background-color,border-color,box-shadow] duration-500 sm:px-5',
+          'pointer-events-auto mx-auto flex max-w-[1320px] items-center justify-between gap-2 rounded-full px-3 py-2.5 backdrop-blur-2xl transition-[background-color,border-color,box-shadow] duration-500 sm:gap-3 sm:px-5 sm:py-3',
           isHomePage && !isRaised
             ? 'border border-white/8 bg-[rgba(7,16,21,0.58)] shadow-[0_20px_70px_-48px_rgba(0,0,0,0.92)]'
             : 'border border-white/10 bg-[rgba(7,16,21,0.82)] shadow-[0_12px_50px_-35px_rgba(0,0,0,0.95)]',
@@ -88,7 +88,7 @@ export function SiteHeader({ navItems, activeSection, resumeUrl }: SiteHeaderPro
             to="/#work"
           >
             <MoveLeft className="size-4" />
-            Back to work
+            <span className="sm:hidden">Back</span><span className="hidden sm:inline">Back to work</span>
           </Link>
         ) : (
           <nav className="hidden items-center gap-1 rounded-full border border-white/8 bg-white/[0.03] p-1 md:flex">
@@ -134,7 +134,7 @@ export function SiteHeader({ navItems, activeSection, resumeUrl }: SiteHeaderPro
         <div className="pointer-events-auto mx-auto mt-3 max-w-[1320px] md:hidden">
           <nav
             className={cn(
-              'no-scrollbar flex gap-2 overflow-x-auto rounded-[1.5rem] px-3 py-2 backdrop-blur-2xl transition-[background-color,border-color,box-shadow] duration-500',
+              'no-scrollbar flex snap-x gap-2 overflow-x-auto overscroll-x-contain rounded-[1.5rem] px-3 py-2 backdrop-blur-2xl transition-[background-color,border-color,box-shadow] duration-500',
               isHomePage && !isRaised
                 ? 'border border-white/[0.07] bg-[linear-gradient(135deg,rgba(7,16,21,0.56),rgba(7,16,21,0.32))] shadow-[0_20px_60px_-42px_rgba(0,0,0,0.85)]'
                 : 'border border-white/10 bg-[rgba(7,16,21,0.76)] shadow-[0_18px_44px_-34px_rgba(0,0,0,0.92)]',
@@ -145,7 +145,7 @@ export function SiteHeader({ navItems, activeSection, resumeUrl }: SiteHeaderPro
                 key={item.id}
                 aria-current={activeSection === item.id ? 'page' : undefined}
                 className={cn(
-                  'shrink-0 rounded-full px-3 py-2 text-[0.68rem] font-medium tracking-[0.18em] uppercase transition',
+                  'shrink-0 snap-start rounded-full px-3 py-2.5 text-[0.68rem] font-medium tracking-[0.18em] uppercase transition',
                   activeSection === item.id
                     ? 'bg-[color:var(--accent)] text-slate-950'
                     : 'text-[color:var(--text-dim)] hover:text-white',

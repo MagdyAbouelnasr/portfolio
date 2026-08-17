@@ -6,7 +6,7 @@ type CaseStudyVisualProps = {
 
 export function CaseStudyVisual({ project }: CaseStudyVisualProps) {
   return (
-    <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(142,227,213,0.18),transparent_55%),linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] p-6">
+    <div className="relative min-w-0 overflow-hidden rounded-[1.5rem] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(128,247,230,0.14),transparent_55%),linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] p-4 sm:rounded-[2rem] sm:p-6">
       <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.04)_50%,transparent_100%)] opacity-30" />
       <div className="relative">
         <div className="grid gap-4 lg:grid-cols-[1fr_280px]">
@@ -20,7 +20,7 @@ export function CaseStudyVisual({ project }: CaseStudyVisualProps) {
                   key={layer.name}
                   className="rounded-[1.3rem] border border-white/8 bg-white/[0.03] p-4"
                 >
-                  <div className="flex items-center justify-between gap-3">
+                  <div className="flex flex-wrap items-center justify-between gap-3">
                     <span className="text-sm font-medium text-white">{layer.name}</span>
                     <span className="text-[0.7rem] tracking-[0.18em] text-[color:var(--text-dim)] uppercase">
                       {layer.tag}

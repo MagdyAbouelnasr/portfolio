@@ -16,9 +16,9 @@ export function ExperienceSection({ experience }: ExperienceSectionProps) {
     <section className="px-4 py-16 sm:px-6 lg:px-10 lg:py-22" id="experience" ref={ref}>
       <div className="mx-auto max-w-[1320px]">
         <SectionHeading
-          description="The emphasis here is ownership, delivery scope, and the kinds of environments these products lived in rather than a copied resume timeline."
+          description="Open a role for the details. The first scan stays focused on trajectory and scope."
           eyebrow="Experience"
-          title="Experience across Saudi, Swiss, and Egyptian product environments."
+          title="Four years. Three markets. Production work throughout."
         />
         <div className="mt-12 space-y-5">
           {experience.map((entry) => (

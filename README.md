@@ -136,8 +136,8 @@ Update that file to:
 The portfolio includes dedicated HTML entrypoints for:
 
 - `/`
-- `/projects/tagdeer-platform/`
-- `/projects/tahkeem-case-lifecycle/`
+- `/projects/commerce-platform/`
+- `/projects/workflow-operations-platform/`
 - `/projects/ngx-hyperpay/`
 
 That keeps direct case-study links working on static hosting and gives each project page the correct title and description on first load.

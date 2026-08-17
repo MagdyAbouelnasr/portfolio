@@ -82,34 +82,32 @@ export type PortfolioData = {
 
 export const navigationItems = [
   { id: 'work', label: 'Work' },
-  { id: 'about', label: 'About' },
-  { id: 'capabilities', label: 'Capabilities' },
+  { id: 'capabilities', label: 'Expertise' },
   { id: 'experience', label: 'Experience' },
-  { id: 'credentials', label: 'Resume' },
   { id: 'contact', label: 'Contact' },
 ]
 
 export const portfolioData: PortfolioData = {
   hero: {
     name: 'Mohamed Abouelnasr',
-    role: 'Senior Frontend Engineer with 4+ years building portals, admin dashboards, and workflow-heavy applications.',
+    role: 'Senior Frontend Engineer turning complex workflows into clear, reliable products.',
     location: 'Alexandria, Egypt',
     valueStatement:
-      'Strong in Angular, TypeScript, RxJS, and NgRx, with end-to-end frontend delivery from Figma and requirements through production.',
+      'I build Angular platforms end to end—from product requirements and state architecture to polished, production-ready UI.',
     summary:
-      'Experienced across Saudi, Egyptian, and Swiss client environments, including bilingual Arabic/English products with RTL support, component architecture, state management, API integration, and release quality. Currently expanding into React, Next.js, and system design.',
+      'Best at workflow-heavy products, bilingual RTL/LTR experiences, and frontend systems that need to stay dependable as they scale.',
     signals: [
       {
         label: 'Experience',
-        value: '4+ years shipping portals, dashboards, and workflow-heavy applications.',
+        value: '4+ years',
       },
       {
-        label: 'Delivery style',
-        value: 'From Figma and requirements through production delivery.',
+        label: 'Product reach',
+        value: '3 markets',
       },
       {
-        label: 'Core focus',
-        value: 'RTL/LTR interfaces, state architecture, API integration, and release quality.',
+        label: 'Workflow scope',
+        value: '5+ modules',
       },
     ],
   },
@@ -131,7 +129,7 @@ export const portfolioData: PortfolioData = {
       'Saudi digital transformation',
       'Swiss agency products',
       'Egyptian port systems',
-      'Case lifecycle workflows',
+      'Regulated operational workflows',
       'Commercial platforms',
       'Admin dashboards',
       'Onboarding flows',
@@ -207,8 +205,8 @@ export const portfolioData: PortfolioData = {
       context:
         'Building production frontend systems for Saudi client environments, with emphasis on reusable Angular architecture, bilingual product support, and release quality.',
       highlights: [
-        'Built the Tagdeer platform frontend from scratch across landing pages, onboarding flows, dashboards, offers, and routing structure.',
-        'Led frontend delivery for Tahkeem end-to-end, including NgRx store design, selectors, and effects for complex case lifecycle workflows across 5+ modules.',
+        'Built a multi-surface commercial platform frontend from scratch across onboarding, dashboards, discovery, and routing.',
+        'Led frontend delivery for a workflow platform, including NgRx store design, selectors, and effects across 5+ modules.',
         'Standardized bilingual Arabic/English patterns with RTL support across shared modules, supporting GCC-ready delivery.',
         'Integrated Google Maps browsing, improved team code quality with ESLint, Prettier, and Husky, and added Playwright coverage for critical flows.',
       ],
@@ -241,23 +239,23 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
-      slug: 'tagdeer-platform',
-      name: 'Tagdeer Platform',
+      slug: 'commerce-platform',
+      name: 'Multi-market Commerce Platform',
       status: 'Production',
       role: 'Frontend Engineer',
       summary:
-        'Built the full frontend of a Saudi commercial platform spanning onboarding, dashboards, maps, and offer flows with bilingual RTL/LTR support.',
+        'Built a commercial platform frontend spanning onboarding, dashboards, location discovery, and offer flows with bilingual RTL/LTR support.',
       contribution:
         'Owned the frontend from zero, shaping reusable components, routing structure, onboarding flows, dashboard experiences, and map-driven browsing.',
       outcome:
-        'Delivered a production frontend with bilingual support, scalable Angular structure, and location-based discovery using Google Maps.',
+        'Delivered a production frontend with bilingual support, scalable Angular structure, and responsive location-based discovery.',
       stack: ['Angular 17', 'TypeScript', 'RxJS', 'Google Maps API', 'Angular Material', 'i18n'],
       caseStudyIntro:
         'This project is the clearest example of full-platform frontend ownership: not a single feature, but the UI system for how users entered, explored, and navigated the product.',
       challenge:
-        'Build a large frontend from scratch for a high-traffic commercial platform while keeping onboarding, dashboards, offer flows, and map-based browsing coherent in both Arabic and English.',
+        'Build a large frontend from scratch while keeping onboarding, dashboards, transactional flows, and location-based browsing coherent in two languages.',
       context:
-        'Delivered inside a Saudi product environment where interface clarity, responsive behavior, and bilingual support were all fundamental to adoption.',
+        'Delivered for a regional product where interface clarity, responsive behavior, and bilingual support were fundamental to adoption.',
       built: [
         'Landing pages, onboarding flows, dashboard surfaces, and offer experiences.',
         'Reusable Angular components and scalable routing to support platform growth.',
@@ -274,7 +272,7 @@ export const portfolioData: PortfolioData = {
         'Resume source does not provide public screenshots or traffic metrics, so the case study stays grounded in implemented scope rather than invented numbers.',
       ],
       impact: [
-        'Delivered the frontend foundation for a production Saudi commercial platform.',
+        'Delivered the frontend foundation for a production commercial platform.',
         'Enabled bilingual market reach through RTL/LTR support and shared translation patterns.',
         'Connected responsive UI filters and Google Maps interactions into a stable browsing flow.',
       ],
@@ -311,25 +309,25 @@ export const portfolioData: PortfolioData = {
       ],
     },
     {
-      slug: 'tahkeem-case-lifecycle',
-      name: 'Tahkeem Case Lifecycle Workflow',
+      slug: 'workflow-operations-platform',
+      name: 'Workflow Operations Platform',
       status: 'Production',
       role: 'Frontend Engineer',
       summary:
-        'Designed and built NgRx state architecture for a complex case management product spanning 5+ modules and multiple async operations.',
+        'Designed and built NgRx state architecture for a regulated workflow product spanning 5+ modules and multiple async operations.',
       contribution:
-        'Led frontend delivery end-to-end for the workflow layer, defining store structure, selectors, effects, and optimistic updates for multi-module case handling.',
+        'Led frontend delivery for the workflow layer, defining store structure, selectors, effects, and optimistic updates across interconnected modules.',
       outcome:
         'Delivered a reliable state architecture with zero state corruption in production according to the resume source.',
       stack: ['Angular', 'NgRx', 'RxJS', 'TypeScript', 'REST APIs'],
       caseStudyIntro:
-        'Tahkeem is the strongest example of system-level frontend work in the resume: the key challenge was keeping complex workflow state trustworthy across modules.',
+        'A system-level frontend challenge centered on keeping complex workflow state trustworthy across interconnected modules.',
       challenge:
-        'Model a multi-module case lifecycle with asynchronous operations and optimistic updates while preventing inconsistent or corrupted state.',
+        'Model a multi-module operational lifecycle with asynchronous actions and optimistic updates while preventing inconsistent state.',
       context:
-        'Built for a workflow-heavy case management environment where frontend state accuracy affected the reliability of the whole product experience.',
+        'Built for a regulated operational environment where frontend state accuracy affected the reliability of the whole product experience.',
       built: [
-        'NgRx store structure, selectors, and effects for a complex case lifecycle.',
+        'NgRx store structure, selectors, and effects for a complex operational lifecycle.',
         'Frontend delivery patterns across 5+ modules with multiple async operations.',
         'Workflow handling designed to keep state predictable during user actions and server responses.',
       ],
@@ -341,17 +339,17 @@ export const portfolioData: PortfolioData = {
       constraints: [
         'Complexity came from workflow breadth across multiple modules, not from a single isolated screen.',
         'Async operations increased the risk of race conditions and state inconsistency.',
-        'Needed the UI to feel dependable under case lifecycle changes, approvals, and updates.',
+        'Needed the UI to remain dependable through status changes, approvals, and updates.',
       ],
       impact: [
         'Delivered an end-to-end frontend state architecture for a real production workflow system.',
         'Maintained zero state corruption in production based on resume-provided evidence.',
-        'Created a stronger foundation for complex case management flows across modules.',
+        'Created a stronger foundation for complex operational flows across modules.',
       ],
       visualLayers: [
         {
           name: 'Workflow layer',
-          tag: 'Cases',
+          tag: 'Work items',
           items: ['Lifecycle states', 'Module coordination', 'Async actions'],
         },
         {
@@ -372,7 +370,7 @@ export const portfolioData: PortfolioData = {
         },
         {
           label: 'Core problem',
-          value: 'Managing complex case state across 5+ modules without creating brittle or inconsistent UX.',
+          value: 'Managing complex workflow state across 5+ modules without creating brittle or inconsistent UX.',
         },
         {
           label: 'Result',

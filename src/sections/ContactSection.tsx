@@ -15,11 +15,11 @@ export function ContactSection({ data }: ContactSectionProps) {
   return (
     <section className="px-4 pt-16 pb-24 sm:px-6 lg:px-10 lg:pt-22 lg:pb-28" id="contact" ref={ref}>
       <div className="mx-auto max-w-[1320px]">
-        <div className="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(142,227,213,0.14),rgba(255,255,255,0.03)_45%,rgba(255,182,107,0.12))] p-6 sm:p-8 lg:rounded-[2.4rem] lg:p-10">
+        <div className="rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,rgba(128,247,230,0.12),rgba(255,255,255,0.03)_45%,rgba(199,129,255,0.1))] p-5 sm:rounded-[2rem] sm:p-8 lg:rounded-[2.4rem] lg:p-10">
           <SectionHeading
             description={data.contact.invitation}
             eyebrow="Message me"
-            title="Open to frontend roles where clarity, quality, and delivery all matter."
+            title="Have a complex frontend? Let’s make it feel simple."
           />
 
           <div className="mt-12 grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
@@ -29,8 +29,8 @@ export function ContactSection({ data }: ContactSectionProps) {
                 href={`mailto:${data.contact.email}`}
               >
                 <p className="text-xs tracking-[0.22em] text-[color:var(--accent)] uppercase">Email</p>
-                <p className="mt-3 text-lg font-semibold text-white">{data.contact.email}</p>
-                <p className="mt-3 text-sm leading-7 text-[color:var(--text-muted)]">Best for direct conversations about frontend roles, product teams, and delivery scope.</p>
+                <p className="mt-3 break-all text-base font-semibold text-white sm:text-lg">{data.contact.email}</p>
+                <p className="mt-3 text-sm leading-7 text-[color:var(--text-muted)]">For roles, product work, and technical conversations.</p>
               </a>
               <a
                 className="rounded-[1.6rem] border border-white/10 bg-[rgba(7,16,21,0.48)] p-5 transition hover:border-white/24"
@@ -40,7 +40,7 @@ export function ContactSection({ data }: ContactSectionProps) {
               >
                 <p className="text-xs tracking-[0.22em] text-[color:var(--accent)] uppercase">LinkedIn</p>
                 <p className="mt-3 text-lg font-semibold text-white">mohamed-abouelnasr</p>
-                <p className="mt-3 text-sm leading-7 text-[color:var(--text-muted)]">A good route for recruiter outreach and professional context.</p>
+                <p className="mt-3 text-sm leading-7 text-[color:var(--text-muted)]">Experience, background, and recruiter outreach.</p>
               </a>
             </div>
             <div data-reveal className="rounded-[1.8rem] border border-white/10 bg-[rgba(7,16,21,0.48)] p-6">
@@ -50,9 +50,9 @@ export function ContactSection({ data }: ContactSectionProps) {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <ButtonAnchor href={`mailto:${data.contact.email}`}>Start a conversation</ButtonAnchor>
-                <ButtonAnchor href={data.contact.github} rel="noreferrer" target="_blank" variant="secondary">
+              <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+                <ButtonAnchor className="justify-center" href={`mailto:${data.contact.email}`}>Start a conversation</ButtonAnchor>
+                <ButtonAnchor className="justify-center" href={data.contact.github} rel="noreferrer" target="_blank" variant="secondary">
                   GitHub
                 </ButtonAnchor>
               </div>

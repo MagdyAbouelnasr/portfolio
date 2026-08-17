@@ -8,7 +8,7 @@ export function CapabilityCluster({ title, summary, items }: CapabilityClusterPr
   return (
     <article
       data-reveal
-      className="rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
+      className="group rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[color:var(--accent)]/35 hover:bg-white/[0.055]"
     >
       <h3 className="text-lg font-semibold text-white">{title}</h3>
       <p className="mt-3 text-sm leading-7 text-[color:var(--text-muted)]">{summary}</p>

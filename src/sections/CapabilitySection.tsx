@@ -16,9 +16,9 @@ export function CapabilitySection({ groups }: CapabilitySectionProps) {
     <section className="px-4 py-16 sm:px-6 lg:px-10 lg:py-22" id="capabilities" ref={ref}>
       <div className="mx-auto max-w-[1320px]">
         <SectionHeading
-          description="Grouped by practical delivery value rather than logos, so the strengths are easier to scan in hiring, product, and technical contexts."
-          eyebrow="Capabilities"
-          title="Capabilities built around shipped Angular frontend work."
+          description="The areas where I can add value from day one."
+          eyebrow="Expertise"
+          title="Built for product complexity, not just polished screens."
         />
         <div className="mt-12 grid gap-5 lg:grid-cols-2">
           {groups.map((group) => (

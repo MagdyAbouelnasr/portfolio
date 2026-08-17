@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <p className="font-medium tracking-[0.16em] text-white uppercase">Mohamed Abouelnasr</p>
           <p className="mt-2 max-w-xl">
-            Senior frontend engineer with 4+ years building portals, admin dashboards, and workflow-heavy applications.
+            Have a frontend role or a complex product challenge? I’m open to a direct conversation.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
