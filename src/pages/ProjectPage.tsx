@@ -1,41 +1,15 @@
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap'
+import { useRef } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { ButtonAnchor, ButtonLink } from '@/components/Button'
 import { CaseStudyVisual } from '@/components/CaseStudyVisual'
 import { Seo } from '@/components/Seo'
 import { portfolioData } from '@/data/portfolio'
-import { usePrefersReducedMotion } from '@/hooks/usePrefersReducedMotion'
 
 export function ProjectPage() {
   const { slug } = useParams<{ slug: string }>()
   const ref = useRef<HTMLDivElement | null>(null)
   const project = portfolioData.projects.find((entry) => entry.slug === slug)
-  const prefersReducedMotion = usePrefersReducedMotion()
-
-  useEffect(() => {
-    const element = ref.current
-
-    if (!element) {
-      return
-    }
-
-    if (prefersReducedMotion) {
-      gsap.set(element.querySelectorAll('[data-project-reveal]'), { autoAlpha: 1, y: 0 })
-      return
-    }
-
-    const context = gsap.context(() => {
-      gsap.fromTo(
-        element.querySelectorAll('[data-project-reveal]'),
-        { autoAlpha: 0, y: 22 },
-        { autoAlpha: 1, y: 0, duration: 0.84, stagger: 0.08, ease: 'power3.out' },
-      )
-    }, element)
-
-    return () => context.revert()
-  }, [prefersReducedMotion])
 
   if (!project) {
     return <Navigate replace to="/" />

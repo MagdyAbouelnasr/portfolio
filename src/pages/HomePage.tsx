@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import gsap from 'gsap'
 import { useLocation } from 'react-router-dom'
 import { CapabilitySection } from '@/sections/CapabilitySection'
 import { ContactSection } from '@/sections/ContactSection'
@@ -8,11 +7,9 @@ import { HeroSection } from '@/sections/HeroSection'
 import { SelectedWorkSection } from '@/sections/SelectedWorkSection'
 import { Seo } from '@/components/Seo'
 import { portfolioData } from '@/data/portfolio'
-import { usePrefersReducedMotion } from '@/hooks/usePrefersReducedMotion'
 
 export function HomePage() {
   const location = useLocation()
-  const prefersReducedMotion = usePrefersReducedMotion()
 
   useEffect(() => {
     if (location.hash) {
@@ -24,34 +21,6 @@ export function HomePage() {
       }
     }
   }, [location.hash])
-
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return
-    }
-
-    const element = document.getElementById('top')
-
-    if (!element) {
-      return
-    }
-
-    const context = gsap.context(() => {
-      gsap.fromTo(
-        element.querySelectorAll('[data-reveal]'),
-        { autoAlpha: 0, y: 24 },
-        {
-          autoAlpha: 1,
-          y: 0,
-          duration: 0.9,
-          stagger: 0.08,
-          ease: 'power3.out',
-        },
-      )
-    }, element)
-
-    return () => context.revert()
-  }, [prefersReducedMotion])
 
   return (
     <div className="relative isolate">
