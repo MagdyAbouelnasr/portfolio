@@ -26,10 +26,10 @@ export function SelectedWorkSection({ projects }: SelectedWorkSectionProps) {
 
         <div data-reveal className="mt-6 flex flex-col gap-5 rounded-[1.5rem] border border-[color:var(--accent)]/18 bg-[color:var(--accent)]/[0.045] p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
           <div>
-            <p className="text-sm font-medium text-white">Working through a similar frontend challenge?</p>
+            <p className="text-sm font-medium text-white">Building a product that needs strong frontend ownership?</p>
             <p className="mt-1 text-sm leading-6 text-[color:var(--text-muted)]">I’m happy to discuss the role, product, or technical problem—no formal brief needed.</p>
           </div>
-          <ButtonAnchor className="shrink-0 justify-center" href="mailto:mmabouelnasr@gmail.com?subject=Frontend opportunity" variant="secondary">Start a conversation</ButtonAnchor>
+          <ButtonAnchor className="shrink-0 justify-center" href="mailto:mmabouelnasr@gmail.com?subject=Engineering opportunity" variant="secondary">Start a conversation</ButtonAnchor>
         </div>
       </div>
     </section>
