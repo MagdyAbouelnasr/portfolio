@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <p className="font-medium tracking-[0.16em] text-white uppercase">Mohamed Abouelnasr</p>
           <p className="mt-2 max-w-xl">
-            Have a frontend role or a complex product challenge? I’m open to a direct conversation.
+            Senior frontend depth, growing full-stack scope. Open to teams that value both immediate contribution and engineering growth.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">

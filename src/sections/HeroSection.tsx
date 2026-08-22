@@ -17,7 +17,7 @@ function DeliveryPanel({ email }: { email: string }) {
       <div className="flex items-start justify-between gap-4 border-b border-white/10 pb-5">
         <div>
           <p className="text-xs tracking-[0.2em] text-[color:var(--accent)] uppercase">How I create value</p>
-          <h2 className="mt-2 text-xl font-semibold text-white sm:text-2xl">From unclear requirements to reliable UI.</h2>
+          <h2 className="mt-2 text-xl font-semibold text-white sm:text-2xl">Frontend depth. Broader system ownership.</h2>
         </div>
         <span className="mt-1 flex size-3 shrink-0"><span className="absolute inline-flex size-3 animate-ping rounded-full bg-[color:var(--accent)] opacity-40" /><span className="relative inline-flex size-3 rounded-full bg-[color:var(--accent)]" /></span>
       </div>
@@ -35,8 +35,8 @@ function DeliveryPanel({ email }: { email: string }) {
       </div>
 
       <div className="mt-5 rounded-[1.2rem] border border-[color:var(--accent)]/20 bg-[color:var(--accent)]/[0.06] p-4">
-        <p className="flex items-center gap-2 text-sm font-medium text-white"><CheckCircle2 className="size-4 text-[color:var(--accent)]" />Strongest fit</p>
-        <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">Complex Angular products, workflow-heavy interfaces, and bilingual platforms.</p>
+        <p className="flex items-center gap-2 text-sm font-medium text-white"><CheckCircle2 className="size-4 text-[color:var(--accent)]" />Now building toward</p>
+        <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">Java backend development, API and database ownership, and cloud deployment fundamentals.</p>
       </div>
 
       <a className="mt-5 flex min-h-12 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm font-medium text-white transition hover:border-[color:var(--accent)]/35 hover:bg-white/[0.07]" href={`mailto:${email}?subject=Frontend opportunity`}>Tell me what you’re building →</a>
@@ -51,10 +51,10 @@ export function HeroSection({ data }: HeroSectionProps) {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,rgba(128,247,230,0.1),transparent_62%)]" />
       <div className="mx-auto grid max-w-[1320px] gap-10 xl:grid-cols-[1.08fr_0.92fr] xl:items-center xl:gap-16">
         <div className="relative z-10 max-w-3xl">
-          <p data-reveal className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-3 py-2 text-[0.68rem] tracking-[0.18em] text-[color:var(--accent)] uppercase sm:px-4 sm:text-xs"><Sparkles className="size-4" />Available for senior frontend opportunities</p>
+          <p data-reveal className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-3 py-2 text-[0.68rem] tracking-[0.18em] text-[color:var(--accent)] uppercase sm:px-4 sm:text-xs"><Sparkles className="size-4" />Frontend specialist · expanding full-stack</p>
           <div data-reveal className="mt-8">
             <p className="flex items-center gap-2 text-sm tracking-[0.16em] text-[color:var(--text-dim)] uppercase"><MapPin className="size-4" />{data.hero.location}</p>
-            <h1 className="mt-5 max-w-4xl text-[clamp(2.75rem,13vw,4.6rem)] leading-[0.94] font-semibold tracking-[-0.055em] text-white lg:text-[6rem]">Complex frontend. <span className="font-serif font-normal italic text-[color:var(--accent)]">Made clear.</span></h1>
+            <h1 className="mt-5 max-w-4xl text-[clamp(2.75rem,13vw,4.6rem)] leading-[0.94] font-semibold tracking-[-0.055em] text-white lg:text-[6rem]">Frontend depth. <span className="font-serif font-normal italic text-[color:var(--accent)]">Full-stack direction.</span></h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[color:var(--accent-soft)] sm:text-2xl sm:leading-9">{data.hero.role}</p>
           </div>
           <p data-reveal className="mt-6 max-w-xl text-base leading-8 text-white/80 sm:text-lg">{data.hero.valueStatement}</p>

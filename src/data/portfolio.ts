@@ -90,10 +90,10 @@ export const navigationItems = [
 export const portfolioData: PortfolioData = {
   hero: {
     name: 'Mohamed Abouelnasr',
-    role: 'Senior Frontend Engineer turning complex workflows into clear, reliable products.',
+    role: 'Senior Frontend Engineer expanding into full-stack and cloud engineering.',
     location: 'Alexandria, Egypt',
     valueStatement:
-      'I build Angular platforms end to end—from product requirements and state architecture to polished, production-ready UI.',
+      'I bring 4+ years of frontend delivery and I am now extending that foundation into Java backend development, APIs, databases, and cloud fundamentals.',
     summary:
       'Best at workflow-heavy products, bilingual RTL/LTR experiences, and frontend systems that need to stay dependable as they scale.',
     signals: [
@@ -102,12 +102,12 @@ export const portfolioData: PortfolioData = {
         value: '4+ years',
       },
       {
-        label: 'Product reach',
-        value: '3 markets',
+        label: 'Current path',
+        value: 'Java + Cloud',
       },
       {
-        label: 'Workflow scope',
-        value: '5+ modules',
+        label: 'Engineering goal',
+        value: 'Full-stack',
       },
     ],
   },
@@ -167,33 +167,45 @@ export const portfolioData: PortfolioData = {
       ],
     },
     {
-      title: 'Interaction, testing, and quality',
+      title: 'Quality and delivery',
       summary:
-        'Testing, linting, and release discipline are part of the frontend work, especially for workflow-heavy products.',
+        'Testing, integration, and release discipline support the production frontend work I already deliver.',
       items: [
         'Playwright',
-        'Jest',
-        'Jasmine',
-        'Karma',
         'ESLint',
         'Prettier',
         'Husky',
         'Semantic release',
+        'REST APIs',
+        'GitLab CI/CD',
       ],
     },
     {
-      title: 'Collaboration and delivery',
+      title: 'Backend path — actively learning',
       summary:
-        'Comfortable moving from Figma and requirements into shipped UI, API integration, and stable user journeys across mixed client environments.',
+        'Java is my primary backend track. Node.js is a practical bridge from TypeScript; .NET and Go remain market options I am evaluating, not claimed expertise.',
       items: [
-        'REST APIs',
-        'JWT',
-        'Swagger',
-        'Google Maps API',
-        'GitLab CI/CD',
-        'Figma handoff',
+        'Java fundamentals',
+        'Spring Boot path',
+        'API design',
+        'SQL fundamentals',
+        'Node.js path',
+        '.NET evaluating',
+        'Go evaluating',
+      ],
+    },
+    {
+      title: 'Cloud path — building foundations',
+      summary:
+        'Developing the infrastructure knowledge needed to understand how applications are packaged, deployed, observed, and operated beyond the browser.',
+      items: [
+        'Cloud fundamentals',
+        'Docker basics',
         'Linux CLI',
-        'Bilingual i18n',
+        'CI/CD concepts',
+        'Networking basics',
+        'Deployment lifecycle',
+        'System design',
       ],
     },
   ],
@@ -469,8 +481,8 @@ export const portfolioData: PortfolioData = {
       },
       {
         label: 'Development focus',
-        value: 'React, Next.js, system design',
-        detail: 'Actively studying patterns, state, performance, SSR, web security, and broader engineering scope.',
+        value: 'Java backend and cloud foundations',
+        detail: 'Building toward full-stack ownership through Java, API design, SQL, deployment, and cloud fundamentals; evaluating Node.js, .NET, and Go by market fit.',
       },
       {
         label: 'GitHub',
@@ -495,11 +507,12 @@ export const portfolioData: PortfolioData = {
     linkedin: 'https://www.linkedin.com/in/mohamed-abouelnasr/',
     github: 'https://github.com/MagdyAbouelnasr',
     invitation:
-      'I am interested in frontend roles where interface quality, system clarity, and dependable delivery all matter at the same time.',
+      'I am open to senior frontend roles and frontend-led full-stack opportunities where I can contribute immediately while growing deeper into backend and cloud ownership.',
     preferences: [
-      'Frontend engineering roles with meaningful product complexity.',
+      'Senior frontend roles with meaningful product complexity.',
+      'Frontend-led full-stack roles with room to grow backend ownership.',
       'Projects that need clearer workflows, stronger state architecture, or more polished UX execution.',
-      'Teams that care about shipping quality, release stability, and frontend ownership.',
+      'Teams that value learning, system thinking, and dependable delivery.',
     ],
   },
 }

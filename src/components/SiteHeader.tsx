@@ -77,7 +77,7 @@ export function SiteHeader({ navItems, activeSection, resumeUrl }: SiteHeaderPro
               Mohamed Abouelnasr
             </span>
             <span className="block truncate text-xs text-[color:var(--text-dim)]">
-              Senior Frontend Engineer
+              Frontend · Full-Stack Path
             </span>
           </span>
         </Link>
