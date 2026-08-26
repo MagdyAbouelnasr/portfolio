@@ -115,7 +115,7 @@ export const portfolioData: PortfolioData = {
   },
   about: {
     summary:
-      'Four-plus years building large-scale portals, admin dashboards, and workflow-heavy applications for teams in Saudi Arabia, Switzerland, and Egypt. I’m the person you bring in when the frontend needs to hold real complexity — reusable structure, dependable state handling, bilingual support — and still behave in production, not just in a demo.',
+      '4+ years and 10+ shipped projects building large-scale portals, admin dashboards, and workflow-heavy applications for teams in Saudi Arabia, Switzerland, and Egypt. I’m the person you bring in when the frontend needs to hold real complexity — reusable structure, dependable state handling, bilingual support — and still behave in production, not just in a demo.',
     howIWork: [
       'Translate requirements into reusable components, scalable routing, and maintainable frontend structure.',
       'Handle loading, error, and empty states as part of the shipped user journey.',
@@ -144,7 +144,7 @@ export const portfolioData: PortfolioData = {
       summary:
         'Production Angular delivery centered on typed interfaces, reusable components, routing, and maintainable application structure.',
       items: [
-        'Angular 13-21',
+        'Angular 12-21',
         'TypeScript',
         'JavaScript',
         'Reactive Forms',
@@ -183,31 +183,28 @@ export const portfolioData: PortfolioData = {
       ],
     },
     {
-      title: 'Backend path — actively learning',
+      title: 'Backend path — actively building',
       summary:
-        'Java is my primary backend track. Node.js is a practical bridge from TypeScript; .NET and Go remain market options I am evaluating, not claimed expertise.',
+        'Java is my committed backend track — from language fundamentals through Spring Boot services, REST API design, and relational data modeling.',
       items: [
         'Java fundamentals',
-        'Spring Boot path',
-        'API design',
+        'Spring Boot',
+        'REST API design',
         'SQL fundamentals',
-        'Node.js path',
-        '.NET evaluating',
-        'Go evaluating',
+        'System design',
       ],
     },
     {
-      title: 'Cloud path — building foundations',
+      title: 'Cloud path — certification-driven',
       summary:
-        'Developing the infrastructure knowledge needed to understand how applications are packaged, deployed, observed, and operated beyond the browser.',
+        'Working toward AWS Solutions Architect, Terraform, and Kubernetes (CKAD) certifications — the operational layer that connects frontend delivery to production infrastructure.',
       items: [
-        'Cloud fundamentals',
-        'Docker basics',
-        'Linux CLI',
-        'CI/CD concepts',
-        'Networking basics',
-        'Deployment lifecycle',
-        'System design',
+        'AWS Solutions Architect (in progress)',
+        'Terraform Associate (in progress)',
+        'Docker',
+        'Kubernetes / CKAD (in progress)',
+        'CI/CD',
+        'Infrastructure as code',
       ],
     },
   ],
@@ -481,13 +478,13 @@ export const portfolioData: PortfolioData = {
       },
       {
         label: 'Certification',
-        value: 'CAPM - PMI',
-        detail: 'Certified Associate in Project Management currently in progress.',
+        value: 'AWS Solutions Architect - Associate',
+        detail: 'In progress, alongside Terraform Associate and Kubernetes (CKAD).',
       },
       {
         label: 'Development focus',
-        value: 'Java backend and cloud foundations',
-        detail: 'Building toward full-stack ownership through Java, API design, SQL, deployment, and cloud fundamentals; evaluating Node.js, .NET, and Go by market fit.',
+        value: 'Java + Spring Boot backend',
+        detail: 'Building toward full-stack ownership: Java and Spring Boot for backend services, AWS and Terraform for infrastructure, Docker/Kubernetes for deployment.',
       },
       {
         label: 'GitHub',
