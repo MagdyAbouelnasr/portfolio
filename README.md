@@ -1,12 +1,12 @@
 # Mohamed Abouelnasr Portfolio
 
-Production-grade personal portfolio built with React, Vite, TypeScript, Tailwind CSS, React Three Fiber, Three.js, and GSAP.
+Production-grade personal portfolio built with React, Vite, TypeScript, Tailwind CSS, and React Router.
 
 ## Concept
 
 The site is built around the idea of `systems, motion, and craft`.
 
-Instead of treating 3D as a separate spectacle, the portfolio uses one lightweight "signal architecture" scene in the hero to represent layered product systems, routed flows, and engineered motion. The rest of the site stays editorial, readable, and fast to skim so the effect supports credibility rather than competing with it.
+The visual layer stays lightweight and CSS/canvas-driven (starfield, cursor glow, motion accents) so the effect supports credibility rather than competing with it. The rest of the site stays editorial, readable, and fast to skim.
 
 ## Stack
 
@@ -14,8 +14,6 @@ Instead of treating 3D as a separate spectacle, the portfolio uses one lightweig
 - Vite
 - TypeScript
 - Tailwind CSS
-- GSAP
-- React Three Fiber / Three.js
 - React Router
 
 ## Resume Mapping
@@ -49,7 +47,6 @@ src/
   hooks/        reduced motion, scroll reveal, active section helpers
   layouts/      shared app shell
   pages/        home and case study pages
-  scenes/       React Three Fiber hero scene
   sections/     page sections
   utils/        small helpers
 ```
@@ -116,8 +113,6 @@ GitHub Pages is viable, but less forgiving for this app than Netlify or Vercel.
 4. Under `Build and deployment`, choose `GitHub Actions`.
 5. Push again or run the `Deploy portfolio to GitHub Pages` workflow manually.
 
-The current blocker from this environment is simple: this folder is not in a git repository yet, there is no remote configured, and GitHub CLI is not installed here, so I can prepare deployment but I cannot actually publish it from this workspace yet.
-
 ## Editing Content
 
 The main content file is:
@@ -144,9 +139,8 @@ That keeps direct case-study links working on static hosting and gives each proj
 
 ## Design Notes
 
-- One 3D idea only: the hero carries the signature spatial effect.
-- Motion is layered: micro-interactions, section reveals, and a few stronger transitions.
-- Reduced-motion users receive a static fallback instead of the animated WebGL scene.
+- Motion stays lightweight: CSS/canvas micro-interactions, no heavy animation or 3D runtime.
+- Reduced-motion users get the static layout automatically via `prefers-reduced-motion`.
 - The layout is optimized to scan quickly on desktop while keeping mobile readable and premium.
 
 ## Post-Render Refinement
