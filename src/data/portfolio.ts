@@ -501,8 +501,8 @@ export const portfolioData: PortfolioData = {
       },
       {
         label: 'Portfolio',
-        value: 'mmabouelnasr-portfolio.netlify.app',
-        href: 'https://mmabouelnasr-portfolio.netlify.app/',
+        value: 'mmabouelnasr-portifolio.vercel.app',
+        href: 'https://mmabouelnasr-portifolio.vercel.app/',
       },
     ],
   },

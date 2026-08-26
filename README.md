@@ -72,30 +72,24 @@ npm run preview
 
 ## Hosting
 
-Best default host for this project: Netlify.
+Currently hosted on Vercel. Netlify was dropped after a regional network-routing
+issue made the site intermittently unreachable from parts of the world
+(unrelated to the app itself — Netlify's edge IPs were affected, confirmed via
+multi-region reachability checks).
 
-Why:
+Why Vercel/GitHub Pages work well here:
 
 - the site is static
 - case studies already build as separate HTML entrypoints
 - the app still uses `BrowserRouter` for in-app navigation
-- Netlify and Vercel both make rewrite handling easier than GitHub Pages for this setup
+- both make rewrite handling easier than GitHub Pages for this setup
 
 Included deployment readiness:
 
-- Netlify redirect fallback: `public/_redirects`
 - Vercel rewrite fallback: `vercel.json`
 - GitHub Pages workflow: `.github/workflows/deploy.yml`
 - Automatic GitHub Pages base-path handling in `vite.config.ts`
-
-### Netlify
-
-1. Put this folder in a GitHub repository.
-2. Push it to GitHub.
-3. Import the repo in Netlify.
-4. Use:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
+- `public/_redirects` (Netlify-style SPA fallback, also read by Cloudflare Pages)
 
 ### Vercel
 
@@ -105,7 +99,7 @@ Included deployment readiness:
 
 ### GitHub Pages
 
-GitHub Pages is viable, but less forgiving for this app than Netlify or Vercel.
+GitHub Pages is viable, but less forgiving for this app than Vercel.
 
 1. Put this folder in a GitHub repository.
 2. Push the default branch as `main`.
