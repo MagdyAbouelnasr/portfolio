@@ -11,7 +11,6 @@
         --muted: #50606f;
         --line: #d7dee3;
         --accent: #0f766e;
-        --accent-soft: #e8f5f3;
       }
 
       * {
@@ -29,7 +28,7 @@
         width: 210mm;
         min-height: 297mm;
         margin: 0 auto;
-        padding: 8mm 15mm;
+        padding: 6mm 15mm;
       }
 
       h1,
@@ -75,28 +74,12 @@
         border-bottom: 1px solid var(--line);
         font-size: 12px;
         font-weight: 700;
-        letter-spacing: 0.18em;
         color: var(--accent);
       }
 
       .summary {
         font-size: 12px;
         line-height: 1.45;
-      }
-
-      .pill-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-      }
-
-      .pill {
-        padding: 4px 7px;
-        border-radius: 999px;
-        background: var(--accent-soft);
-        border: 1px solid #c9e6e1;
-        font-size: 11px;
-        line-height: 1.2;
       }
 
       .job {
@@ -121,9 +104,16 @@
         color: var(--muted);
       }
 
-      .job-role {
+      .job-title {
         margin-top: 2px;
         font-size: 12.5px;
+      }
+
+      .job-title strong {
+        font-weight: 700;
+      }
+
+      .job-context {
         color: var(--muted);
       }
 
@@ -138,37 +128,34 @@
         line-height: 1.35;
       }
 
-      .project {
-        margin-top: 7px;
+      .roadmap {
+        margin-top: 6px;
       }
 
-      .project-title {
+      .roadmap-row {
         display: flex;
         justify-content: space-between;
         gap: 16px;
         align-items: baseline;
-        font-size: 13px;
+        font-size: 12px;
+      }
+
+      .roadmap-row strong {
         font-weight: 700;
       }
 
-      .project-status {
-        font-size: 11.5px;
-        color: var(--muted);
-        font-weight: 400;
+      .roadmap-status {
+        flex-shrink: 0;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--accent);
       }
 
-      .project p,
       .skill-block p,
       .edu p {
         margin-top: 3px;
         font-size: 11.5px;
         line-height: 1.35;
-      }
-
-      .two-col {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
       }
 
       .edu {
@@ -198,7 +185,7 @@
   <body>
     <main class="page">
       <h1>Mohamed Abouelnasr</h1>
-      <p class="headline">Senior Frontend Engineer · Angular · TypeScript · Full-Stack Growth</p>
+      <p class="headline">Senior Frontend Engineer · Angular · TypeScript · Full-Stack &amp; Cloud Growth</p>
       <p class="contact">
         <a href="mailto:mmabouelnasr@gmail.com">mmabouelnasr@gmail.com</a>
         &nbsp;|&nbsp; +20 100 421 5967 &nbsp;|&nbsp;
@@ -213,27 +200,23 @@
       <section class="section">
         <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
         <p class="summary">
-          Senior Frontend Engineer with 4+ years delivering portals and workflow-heavy products across
-          Saudi, Swiss, and Egyptian teams. Specializes in Angular, TypeScript, RxJS, and NgRx; owns work
-          from requirements and state architecture through bilingual, production-ready interfaces. Now
-          expanding into Java backend, API and database design, and cloud fundamentals.
+          Senior Frontend Engineer with 4+ years shipping production Angular systems (v12-21) across 10+
+          projects for teams in Saudi Arabia, Switzerland, and Egypt. Owns delivery end-to-end, from requirements and NgRx/RxJS
+          state architecture through bilingual Arabic/English interfaces that hold up under real production
+          load, not just in a demo. Now building full-stack and cloud depth on top of that foundation: Java
+          and Spring Boot for backend services, AWS and Terraform for infrastructure, and Docker/Kubernetes
+          for deployment, extending frontend ownership into systems ownership.
         </p>
       </section>
 
       <section class="section">
         <h2 class="section-title">CORE COMPETENCIES</h2>
-        <div class="pill-grid">
-          <span class="pill">Angular 13-21</span>
-          <span class="pill">TypeScript</span>
-          <span class="pill">NgRx State Architecture</span>
-          <span class="pill">RxJS &amp; Reactive Flows</span>
-          <span class="pill">REST API Integration</span>
-          <span class="pill">RTL / Arabic-English i18n</span>
-          <span class="pill">Component Architecture</span>
-          <span class="pill">Playwright / E2E Testing</span>
-          <span class="pill">CI/CD &amp; Code Quality</span>
-          <span class="pill">Google Maps Integration</span>
-        </div>
+        <p class="summary">
+          Angular 12-21 &middot; Standalone Components &amp; Modern Control Flow &middot; TypeScript &middot;
+          RxJS &amp; NgRx State Architecture &middot; Angular Signals &middot; GitLab CI/CD &middot;
+          Playwright / Jest Testing &middot; RTL / Arabic-English i18n &middot; Production Debugging &amp;
+          Problem Solving
+        </p>
       </section>
 
       <section class="section">
@@ -244,12 +227,12 @@
             <div class="job-company">INNOSOFT (previously Solutions by 42)</div>
             <div class="job-period">Apr 2024 - Present</div>
           </div>
-          <div class="job-role">Frontend Engineer - Saudi digital transformation &amp; custom software delivery</div>
+          <div class="job-title"><strong>Frontend Engineer</strong> <span class="job-context">&mdash; Saudi digital transformation &amp; custom software delivery</span></div>
           <ul>
-            <li>Built Tagdeer's Angular frontend from zero across onboarding, dashboards, offers, reusable components, and scalable routing.</li>
-            <li>Led Tahkeem frontend delivery; designed NgRx state, selectors, and effects for case lifecycles spanning 5+ modules.</li>
-            <li>Standardized Arabic/English RTL/LTR patterns across shared modules and integrated map-based search with responsive filters.</li>
-            <li>Introduced ESLint, Prettier, Husky, and Playwright coverage to strengthen review quality and critical release flows.</li>
+            <li>Built a multi-surface commercial platform frontend from an empty repo to production &mdash; onboarding, dashboards, map-based discovery, and offers &mdash; fully bilingual in Arabic and English.</li>
+            <li>Led frontend delivery for a regulated workflow platform; designed the NgRx store, selectors, and effects powering case lifecycles across 5+ interconnected modules with zero state corruption in production.</li>
+            <li>Standardized Arabic/English RTL/LTR patterns and shared translation infrastructure across modules, enabling GCC-ready delivery.</li>
+            <li>Integrated Google Maps-based location search with responsive filters and async loading states; introduced ESLint, Prettier, Husky, and Playwright to raise review quality and protect critical release flows.</li>
           </ul>
         </div>
 
@@ -258,11 +241,11 @@
             <div class="job-company">MODESO</div>
             <div class="job-period">Aug 2023 - Apr 2024</div>
           </div>
-          <div class="job-role">Full-Stack Software Engineer - Swiss agency building web and mobile products for startups and enterprises</div>
+          <div class="job-title"><strong>Full-Stack Software Engineer (frontend-focused)</strong> <span class="job-context">&mdash; Swiss agency building web and mobile products for startups and enterprises</span></div>
           <ul>
-            <li>Shipped responsive Angular flows and reusable components across multiple client products in a fast-paced agency.</li>
-            <li>Built RxJS data flows and REST integrations with complete loading, empty, and error states.</li>
-            <li>Resolved production issues including RxJS race conditions that caused intermittent data loss.</li>
+            <li>Shipped responsive Angular flows and reusable components across multiple concurrent client products in a fast-paced agency environment.</li>
+            <li>Built RxJS-driven data flows and REST API integrations with complete loading, empty, and error states for stable production journeys.</li>
+            <li>Root-caused and resolved complex RxJS race conditions that were causing intermittent data loss in production.</li>
           </ul>
         </div>
 
@@ -271,72 +254,43 @@
             <div class="job-company">Integrated Solutions for Ports (ISFP)</div>
             <div class="job-period">Jan 2023 - Jul 2023</div>
           </div>
-          <div class="job-role">Front End Engineer - Transport automation and business process management for Egyptian ports</div>
+          <div class="job-title"><strong>Front End Engineer</strong> <span class="job-context">&mdash; Transport automation and business process management for Egyptian ports</span></div>
           <ul>
             <li>Delivered production workflow screens and reusable components for a government port-digitalization programme.</li>
-            <li>Integrated backend services and supported pre-release validation of critical flows.</li>
+            <li>Integrated frontend flows with backend services; validated critical workflows in system test environments ahead of releases.</li>
           </ul>
         </div>
       </section>
 
       <section class="section">
-        <h2 class="section-title">PROJECTS</h2>
-
-        <div class="project">
-          <div class="project-title">
-            <span>Tagdeer Platform</span>
-            <span class="project-status">Production</span>
-          </div>
-          <p>Full Angular frontend spanning onboarding, dashboards, maps, offers, and bilingual RTL/LTR experiences.</p>
-          <p class="muted">Angular 17 · TypeScript · RxJS · Google Maps API · Angular Material · i18n</p>
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="edu">
+          <p><strong>BSc Computer Science</strong></p>
+          <p class="muted">University of Northampton - Class A with Honours</p>
         </div>
-
-        <div class="project">
-          <div class="project-title">
-            <span>Tahkeem - Case Lifecycle Workflow</span>
-            <span class="project-status">Production</span>
-          </div>
-          <p>NgRx architecture for a case-management lifecycle across 5+ modules, including selectors, effects, and optimistic updates.</p>
-          <p class="muted">Angular · NgRx · RxJS · TypeScript · REST APIs</p>
-        </div>
-
-        <div class="project">
-          <div class="project-title">
-            <span>ngx-hyperpay</span>
-            <span class="project-status">Open Source</span>
-          </div>
-          <p>Published a typed, configurable Angular library for HyperPay integration on npm.</p>
-          <p class="muted">Angular · TypeScript · npm · Open Source</p>
+        <div class="edu">
+          <p><strong>BSc Computer Science</strong></p>
+          <p class="muted">Arab Academy for Science, Technology &amp; Maritime Transport - GPA 3.54 / 4 (Honours)</p>
         </div>
       </section>
 
-      <section class="section two-col">
-        <div>
-          <h2 class="section-title">EDUCATION</h2>
-          <div class="edu">
-            <p><strong>BSc Computer Science</strong></p>
-            <p class="muted">University of Northampton - Class A with Honours</p>
-          </div>
-          <div class="edu">
-            <p><strong>BSc Computer Science</strong></p>
-            <p class="muted">Arab Academy for Science, Technology &amp; Maritime Transport - GPA 3.54 / 4 (Honours)</p>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="section-title">CERTIFICATIONS &amp; DEVELOPMENT</h2>
-          <p class="small"><strong>Certified Associate in Project Management (CAPM) - PMI</strong> &nbsp;<span class="muted">In progress</span></p>
-          <p class="small muted" style="margin-top: 8px;">Building foundations in Java, backend APIs, SQL, cloud deployment, and system design; evaluating Node.js, .NET, and Go by role and market fit.</p>
+      <section class="section">
+        <h2 class="section-title">CERTIFICATIONS &mdash; IN PROGRESS</h2>
+        <div class="roadmap">
+          <div class="roadmap-row"><strong>AWS Certified Solutions Architect - Associate</strong> <span class="roadmap-status">IN PROGRESS</span></div>
+          <div class="roadmap-row"><strong>HashiCorp Certified: Terraform Associate</strong> <span class="roadmap-status">IN PROGRESS</span></div>
+          <div class="roadmap-row"><strong>Certified Kubernetes Application Developer (CKAD)</strong> <span class="roadmap-status">IN PROGRESS</span></div>
+          <div class="roadmap-row"><strong>Backend build path: Java &rarr; Spring Boot &rarr; REST API &amp; database design</strong> <span class="roadmap-status">BUILDING</span></div>
         </div>
       </section>
 
       <section class="section">
         <h2 class="section-title">SKILLS</h2>
         <div class="skill-block">
-          <p><strong>Frontend:</strong> Angular 13-21 · TypeScript · JavaScript · RxJS · NgRx · Angular Signals · Reactive Forms · Angular Router · Angular Material · PrimeNG · RTL/LTR i18n</p>
-          <p><strong>Learning path:</strong> Java · Spring Boot · API design · SQL · Cloud fundamentals · Docker · System design</p>
+          <p><strong>Frontend:</strong> Angular 12-21 · Standalone Components · Control Flow (@if/@for) · TypeScript · JavaScript · RxJS · NgRx · Angular Signals · Reactive Forms · Angular Router · Angular Material · PrimeNG · RTL/LTR i18n</p>
+          <p><strong>Backend &amp; cloud (building):</strong> Java · Spring Boot · REST API Design · SQL · AWS · Terraform · Docker · Kubernetes · System Design</p>
           <p><strong>APIs &amp; Integration:</strong> REST APIs · JWT · Swagger · SignalR · Google Maps API</p>
-          <p><strong>Testing &amp; Quality:</strong> Playwright · Jest · ESLint · Prettier · Husky</p>
+          <p><strong>Tools &amp; Practices:</strong> Git · GitHub · Playwright · Jest · ESLint · Prettier · Husky · GitLab CI/CD</p>
         </div>
       </section>
     </main>
