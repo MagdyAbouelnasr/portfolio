@@ -1,5 +1,6 @@
 import { ArrowDownRight, Boxes, CheckCircle2, MapPin, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
 import { ButtonAnchor } from '@/components/Button'
+import { Highlight, Squiggle } from '@/components/Doodles'
 import type { PortfolioData } from '@/data/portfolio'
 
 type HeroSectionProps = { data: PortfolioData }
@@ -54,17 +55,18 @@ export function HeroSection({ data }: HeroSectionProps) {
           <p data-reveal className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-3 py-2 text-[0.68rem] tracking-[0.18em] text-[color:var(--accent)] uppercase sm:px-4 sm:text-xs"><Sparkles className="size-4" />Frontend specialist · expanding full-stack</p>
           <div data-reveal className="mt-8">
             <p className="flex items-center gap-2 text-sm tracking-[0.16em] text-[color:var(--text-dim)] uppercase"><MapPin className="size-4" />{data.hero.location}</p>
-            <h1 className="mt-5 max-w-4xl text-[clamp(2.75rem,13vw,4.6rem)] leading-[0.94] font-semibold tracking-[-0.055em] text-white lg:text-[6rem]">Frontend depth. <span className="font-serif font-normal italic text-[color:var(--accent)]">Full-stack direction.</span></h1>
+            <h1 className="mt-5 max-w-4xl text-[clamp(2.75rem,13vw,4.6rem)] leading-[0.94] font-semibold tracking-[-0.055em] text-white lg:text-[6rem]">Frontend depth. <Squiggle><span className="font-serif font-normal italic text-[color:var(--accent)]">Full-stack direction.</span></Squiggle></h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[color:var(--accent-soft)] sm:text-2xl sm:leading-9">{data.hero.role}</p>
           </div>
           <p data-reveal className="mt-6 max-w-xl text-base leading-8 text-white/80 sm:text-lg">{data.hero.valueStatement}</p>
-          <div data-reveal className="mt-8 grid gap-3 sm:mt-10 sm:flex sm:flex-wrap">
+          <p data-reveal className="mt-4 max-w-xl text-sm leading-7 text-[color:var(--text-dim)] sm:text-base">{data.hero.summary}</p>
+          <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-reveal>
             <ButtonAnchor className="w-full justify-center sm:w-auto" href="#work" icon="arrow">See my work</ButtonAnchor>
             <ButtonAnchor className="w-full justify-center sm:w-auto" href={`mailto:${data.contact.email}?subject=Frontend opportunity`} variant="secondary">Discuss a role</ButtonAnchor>
             <ButtonAnchor className="w-full justify-center sm:w-auto" download href={data.resume.downloadHref} icon="download" variant="ghost">Resume</ButtonAnchor>
           </div>
           <div data-reveal className="mt-8 grid grid-cols-3 gap-2 sm:mt-10 sm:gap-4">
-            {data.hero.signals.map((signal) => <div className="border-l border-white/12 pl-3 sm:pl-4" key={signal.label}><p className="text-[0.62rem] tracking-[0.13em] text-[color:var(--text-dim)] uppercase sm:text-xs">{signal.label}</p><p className="mt-2 text-lg font-semibold text-white sm:text-2xl">{signal.value}</p></div>)}
+            {data.hero.signals.map((signal) => <div className="border-l border-white/12 pl-3 sm:pl-4" key={signal.label}><p className="text-[0.62rem] tracking-[0.13em] text-[color:var(--text-dim)] uppercase sm:text-xs">{signal.label}</p><p className="mt-2 text-lg font-semibold text-white sm:text-2xl">{signal.label === 'Experience' ? <Highlight>{signal.value}</Highlight> : signal.value}</p></div>)}
           </div>
           <a data-reveal className="mt-8 hidden items-center gap-2 text-sm tracking-[0.18em] text-[color:var(--text-dim)] uppercase transition hover:text-white sm:inline-flex" href="#work">See proof, not promises<ArrowDownRight className="size-4" /></a>
         </div>

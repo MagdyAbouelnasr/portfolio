@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { ButtonAnchor, ButtonLink } from '@/components/Button'
 import { CaseStudyVisual } from '@/components/CaseStudyVisual'
+import { StickyNote } from '@/components/Doodles'
 import { Seo } from '@/components/Seo'
 import { portfolioData } from '@/data/portfolio'
 
@@ -69,8 +70,11 @@ export function ProjectPage() {
               ))}
             </div>
           </div>
-          <div data-project-reveal>
+          <div className="relative" data-project-reveal>
             <CaseStudyVisual project={project} />
+            <StickyNote className="absolute -top-5 right-6 z-10 hidden sm:block" rotate={project.slug === 'workflow-operations-platform' ? 3 : -4}>
+              {project.proofNote}
+            </StickyNote>
           </div>
         </div>
 

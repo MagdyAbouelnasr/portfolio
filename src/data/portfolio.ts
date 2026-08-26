@@ -12,6 +12,7 @@ export type PortfolioProject = {
   summary: string
   contribution: string
   outcome: string
+  proofNote: string
   stack: string[]
   caseStudyIntro: string
   challenge: string
@@ -81,6 +82,7 @@ export type PortfolioData = {
 }
 
 export const navigationItems = [
+  { id: 'about', label: 'About' },
   { id: 'work', label: 'Work' },
   { id: 'capabilities', label: 'Expertise' },
   { id: 'experience', label: 'Experience' },
@@ -90,12 +92,12 @@ export const navigationItems = [
 export const portfolioData: PortfolioData = {
   hero: {
     name: 'Mohamed Abouelnasr',
-    role: 'Senior Frontend Engineer expanding into full-stack and cloud engineering.',
+    role: 'Senior Frontend Engineer with 4+ years shipping production Angular systems — now expanding into full-stack and cloud engineering.',
     location: 'Alexandria, Egypt',
     valueStatement:
-      'I bring 4+ years of frontend delivery and I am now extending that foundation into Java backend development, APIs, databases, and cloud fundamentals.',
+      'I turn ambiguous requirements into dependable, bilingual, production-grade frontends — and I’m deliberately building the Java, API, and cloud skills to own more of the system end to end.',
     summary:
-      'Best at workflow-heavy products, bilingual RTL/LTR experiences, and frontend systems that need to stay dependable as they scale.',
+      'Strongest on workflow-heavy products, bilingual Arabic/English interfaces with full RTL support, and frontend systems that hold up in production — not just in a demo.',
     signals: [
       {
         label: 'Experience',
@@ -113,7 +115,7 @@ export const portfolioData: PortfolioData = {
   },
   about: {
     summary:
-      'I have spent the last 4+ years building large-scale portals, admin dashboards, and workflow-heavy applications. The strongest fit for my work is frontend delivery that needs reusable structure, dependable state handling, bilingual support, and stable production behavior.',
+      'Four-plus years building large-scale portals, admin dashboards, and workflow-heavy applications for teams in Saudi Arabia, Switzerland, and Egypt. I’m the person you bring in when the frontend needs to hold real complexity — reusable structure, dependable state handling, bilingual support — and still behave in production, not just in a demo.',
     howIWork: [
       'Translate requirements into reusable components, scalable routing, and maintainable frontend structure.',
       'Handle loading, error, and empty states as part of the shipped user journey.',
@@ -256,14 +258,15 @@ export const portfolioData: PortfolioData = {
       status: 'Production',
       role: 'Frontend Engineer',
       summary:
-        'Built a commercial platform frontend spanning onboarding, dashboards, location discovery, and offer flows with bilingual RTL/LTR support.',
+        'Owned a commercial platform’s frontend from an empty repo to production — onboarding, dashboards, map-based discovery, and offers, fully bilingual in Arabic and English.',
       contribution:
         'Owned the frontend from zero, shaping reusable components, routing structure, onboarding flows, dashboard experiences, and map-driven browsing.',
       outcome:
         'Delivered a production frontend with bilingual support, scalable Angular structure, and responsive location-based discovery.',
+      proofNote: 'started from a blank repo, not a template',
       stack: ['Angular 17', 'TypeScript', 'RxJS', 'Google Maps API', 'Angular Material', 'i18n'],
       caseStudyIntro:
-        'This project is the clearest example of full-platform frontend ownership: not a single feature, but the UI system for how users entered, explored, and navigated the product.',
+        'The clearest proof of full-platform ownership on my resume: not one feature, but the entire UI system users touch, from first landing to daily dashboard use — in two languages.',
       challenge:
         'Build a large frontend from scratch while keeping onboarding, dashboards, transactional flows, and location-based browsing coherent in two languages.',
       context:
@@ -326,14 +329,15 @@ export const portfolioData: PortfolioData = {
       status: 'Production',
       role: 'Frontend Engineer',
       summary:
-        'Designed and built NgRx state architecture for a regulated workflow product spanning 5+ modules and multiple async operations.',
+        'Designed the NgRx state architecture behind a regulated workflow product — 5+ interconnected modules, async operations end to end, zero state corruption in production.',
       contribution:
         'Led frontend delivery for the workflow layer, defining store structure, selectors, effects, and optimistic updates across interconnected modules.',
       outcome:
         'Delivered a reliable state architecture with zero state corruption in production according to the resume source.',
+      proofNote: 'zero corruption — this actually held in prod',
       stack: ['Angular', 'NgRx', 'RxJS', 'TypeScript', 'REST APIs'],
       caseStudyIntro:
-        'A system-level frontend challenge centered on keeping complex workflow state trustworthy across interconnected modules.',
+        'A systems-level problem, not a UI problem: keep workflow state trustworthy across interconnected modules when everything is async and nothing is allowed to drift.',
       challenge:
         'Model a multi-module operational lifecycle with asynchronous actions and optimistic updates while preventing inconsistent state.',
       context:
@@ -396,14 +400,15 @@ export const portfolioData: PortfolioData = {
       status: 'Open source',
       role: 'Library Author',
       summary:
-        'Published an Angular library for HyperPay payment gateway integration with typed configuration and npm distribution for the MENA developer community.',
+        'Published and maintain an open-source Angular library for HyperPay payment integration — typed, configurable, live on npm for any Angular developer to install.',
       contribution:
         'Created and published a reusable Angular package that wrapped payment gateway integration into a typed, configurable developer-facing library.',
       outcome:
         'Turned a recurring integration need into an installable open-source package instead of a one-off implementation.',
+      proofNote: 'public repo — go ahead, check the code',
       stack: ['Angular', 'TypeScript', 'npm', 'Open Source'],
       caseStudyIntro:
-        'This project shows a different kind of frontend work from the resume: packaging integration complexity into something other developers can adopt and reuse.',
+        'A different kind of proof than the rest of this page: public code you can actually go read, not just a case study I’ve written about.',
       challenge:
         'Make HyperPay integration easier for Angular developers by turning integration details into a typed, configurable package.',
       context:

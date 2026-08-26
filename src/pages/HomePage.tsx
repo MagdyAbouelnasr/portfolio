@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { AboutSection } from '@/sections/AboutSection'
 import { CapabilitySection } from '@/sections/CapabilitySection'
 import { ContactSection } from '@/sections/ContactSection'
 import { ExperienceSection } from '@/sections/ExperienceSection'
@@ -30,6 +31,7 @@ export function HomePage() {
       />
       <div className="relative z-10">
         <HeroSection data={portfolioData} />
+        <AboutSection data={portfolioData} />
         <SelectedWorkSection projects={portfolioData.projects} />
         <CapabilitySection groups={portfolioData.capabilities} />
         <ExperienceSection experience={portfolioData.experience} />
