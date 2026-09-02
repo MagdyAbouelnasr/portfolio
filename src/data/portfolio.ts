@@ -97,7 +97,7 @@ export const portfolioData: PortfolioData = {
     valueStatement:
       'I build dependable Angular systems for complex workflows, bilingual products, and high-traffic user journeys.',
     summary:
-      '4+ years delivering production frontend applications for teams in Switzerland, Saudi Arabia, and Egypt, with deep experience in reactive state, reusable UI architecture, REST integrations, and RTL/LTR delivery. Available remotely across European and Gulf time zones.',
+      '4+ years delivering production frontend applications for teams in Switzerland, Saudi Arabia, and Egypt, with deep experience in reactive state, reusable UI architecture, REST integrations, and RTL/LTR delivery. Currently delivering remotely to a Saudi team, and available across European and Gulf time zones.',
     signals: [
       {
         label: 'Experience',
@@ -198,7 +198,7 @@ export const portfolioData: PortfolioData = {
     {
       company: 'INNOSOFT (previously Solutions by 42)',
       period: 'Apr 2024 - Present',
-      role: 'Frontend Engineer | Saudi digital transformation and custom software delivery',
+      role: 'Frontend Engineer | Remote · Saudi digital transformation and custom software delivery',
       context:
         'Building Angular products in a small team with substantial frontend ownership across employee benefits and complex arbitration workflows.',
       highlights: [
@@ -212,7 +212,7 @@ export const portfolioData: PortfolioData = {
     {
       company: 'MODESO',
       period: 'Aug 2023 - Apr 2024',
-      role: 'Full-Stack Software Engineer — Frontend Focus | Swiss software agency',
+      role: 'Full-Stack Software Engineer — Frontend Focus | Hybrid · Swiss software agency',
       context:
         'Worked in a fast-paced agency setting, turning requirements into responsive Angular user flows and solving production reliability issues across multiple client products.',
       highlights: [
@@ -225,7 +225,7 @@ export const portfolioData: PortfolioData = {
     {
       company: 'Integrated Solutions for Ports (ISFP)',
       period: 'Jan 2023 - Jul 2023',
-      role: 'Front End Engineer | Transport automation and business process management',
+      role: 'Front End Engineer | On-site · Transport automation and business process management',
       context:
         'Supported web application delivery inside a government digitalization programme, where release reliability and workflow accuracy mattered.',
       highlights: [
@@ -492,7 +492,7 @@ export const portfolioData: PortfolioData = {
     linkedin: 'https://www.linkedin.com/in/mohamed-abouelnasr/',
     github: 'https://github.com/MagdyAbouelnasr',
     invitation:
-      'I am open to senior frontend and frontend software-engineering roles where Angular architecture, reactive state, and dependable product delivery matter. I work remotely across European and Gulf time zones, as a contractor or through an Employer of Record, and I am open to relocation.',
+      'I am open to senior frontend and frontend software-engineering roles where Angular architecture, reactive state, and dependable product delivery matter. I have been delivering remotely to a Saudi team since April 2024, work comfortably across European and Gulf time zones, and am open to contract, Employer of Record, or relocation arrangements.',
     preferences: [
       'Senior frontend roles with meaningful product complexity.',
       'Products with complex workflows, bilingual interfaces, or high-traffic user journeys.',

@@ -24,9 +24,20 @@ publishing it.
   near-full overlap with Gulf working hours.
 - Open to remote engagements as a contractor or through an Employer of Record,
   and open to relocation.
-- These are current logistical facts about availability, not claims about past
-  employment arrangements. Do not state that any specific past role was
-  performed remotely unless that is verified and recorded here.
+
+### Verified work arrangements
+
+All three professional roles were performed while based in Egypt.
+
+- Innosoft (April 2024 to present): remote. This is verified ongoing remote
+  delivery to a Saudi organization.
+- Modeso (August 2023 to April 2024): hybrid, based in Egypt, delivering for a
+  Swiss agency.
+- ISFP (January 2023 to July 2023): on-site in Egypt.
+
+Remote delivery may be claimed for the Innosoft role and for current
+availability. Do not describe the Modeso role as fully remote; it was hybrid.
+Do not describe the ISFP role as remote or hybrid.
 
 ## Demonstrated Skills
 
