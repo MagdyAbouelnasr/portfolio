@@ -17,6 +17,17 @@ publishing it.
 - Current experience does not support positioning as a senior full-stack,
   backend, Java, Go, cloud architecture, DevOps, Kubernetes, or Web3 engineer.
 
+## Location and Availability
+
+- Based in Alexandria, Egypt.
+- Time zone UTC+2, which gives full overlap with the CET working day and
+  near-full overlap with Gulf working hours.
+- Open to remote engagements as a contractor or through an Employer of Record,
+  and open to relocation.
+- These are current logistical facts about availability, not claims about past
+  employment arrangements. Do not state that any specific past role was
+  performed remotely unless that is verified and recorded here.
+
 ## Demonstrated Skills
 
 ### Frontend

@@ -93,11 +93,11 @@ export const portfolioData: PortfolioData = {
   hero: {
     name: 'Mohamed Abouelnasr',
     role: 'Senior Frontend Engineer | Angular, TypeScript, RxJS & NgRx',
-    location: 'Alexandria, Egypt',
+    location: 'Alexandria, Egypt · UTC+2',
     valueStatement:
       'I build dependable Angular systems for complex workflows, bilingual products, and high-traffic user journeys.',
     summary:
-      '4+ years delivering production frontend applications for teams in Saudi Arabia, Switzerland, and Egypt, with deep experience in reactive state, reusable UI architecture, REST integrations, and RTL/LTR delivery.',
+      '4+ years delivering production frontend applications for teams in Switzerland, Saudi Arabia, and Egypt, with deep experience in reactive state, reusable UI architecture, REST integrations, and RTL/LTR delivery. Available remotely across European and Gulf time zones.',
     signals: [
       {
         label: 'Experience',
@@ -115,7 +115,7 @@ export const portfolioData: PortfolioData = {
   },
   about: {
     summary:
-      'I’m a Senior Frontend Engineer with 4+ years building production Angular applications for teams in Saudi Arabia, Switzerland, and Egypt. My strongest work combines reusable architecture, dependable reactive state, bilingual product delivery, and careful integration with backend services.',
+      'I’m a Senior Frontend Engineer with 4+ years building production Angular applications for teams in Switzerland, Saudi Arabia, and Egypt. My strongest work combines reusable architecture, dependable reactive state, bilingual product delivery, and careful integration with backend services.',
     howIWork: [
       'Translate requirements into reusable components, scalable routing, and maintainable frontend structure.',
       'Handle loading, error, and empty states as part of the shipped user journey.',
@@ -492,12 +492,13 @@ export const portfolioData: PortfolioData = {
     linkedin: 'https://www.linkedin.com/in/mohamed-abouelnasr/',
     github: 'https://github.com/MagdyAbouelnasr',
     invitation:
-      'I am open to senior frontend and frontend software-engineering roles where Angular architecture, reactive state, and dependable product delivery matter.',
+      'I am open to senior frontend and frontend software-engineering roles where Angular architecture, reactive state, and dependable product delivery matter. I work remotely across European and Gulf time zones, as a contractor or through an Employer of Record, and I am open to relocation.',
     preferences: [
       'Senior frontend roles with meaningful product complexity.',
       'Products with complex workflows, bilingual interfaces, or high-traffic user journeys.',
       'Projects that need clearer workflows, stronger state architecture, or more polished UX execution.',
       'Teams that value systems thinking, clear collaboration, and dependable delivery.',
+      'Remote roles with European or Gulf teams, or relocation to the Gulf.',
     ],
   },
 }
