@@ -17,7 +17,7 @@ export function CredentialsSection({ data }: CredentialsSectionProps) {
     <section className="px-4 py-16 sm:px-6 lg:px-10 lg:py-22" id="credentials" ref={ref}>
       <div className="mx-auto max-w-[1320px]">
         <SectionHeading
-          description="Resume, education, ongoing development, and core profiles are kept together here so recruiters and hiring managers can verify the profile quickly."
+          description="Resume, education, selected open-source work, and core profiles are kept together so recruiters and hiring managers can verify the profile quickly."
           eyebrow="Credentials"
           title="Resume access, education, and the signals behind the work."
         />
@@ -27,7 +27,7 @@ export function CredentialsSection({ data }: CredentialsSectionProps) {
             <p className="text-xs tracking-[0.22em] text-[color:var(--accent)] uppercase">Resume</p>
             <h3 className="mt-4 text-3xl font-semibold text-white">A concise view of the full profile.</h3>
             <p className="mt-4 max-w-xl text-base leading-8 text-[color:var(--text-muted)]">
-              Download the latest resume for a compact version of experience, projects, skills, education, and development focus areas.
+              Download the latest resume for a compact version of verified experience, frontend skills, education, and selected open-source work.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonAnchor download href={data.resume.downloadHref} icon="download">

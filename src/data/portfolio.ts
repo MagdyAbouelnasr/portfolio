@@ -92,30 +92,30 @@ export const navigationItems = [
 export const portfolioData: PortfolioData = {
   hero: {
     name: 'Mohamed Abouelnasr',
-    role: 'Senior Frontend Engineer with 4+ years shipping production Angular systems — now expanding into full-stack and cloud engineering.',
+    role: 'Senior Frontend Engineer | Angular, TypeScript, RxJS & NgRx',
     location: 'Alexandria, Egypt',
     valueStatement:
-      'I turn ambiguous requirements into dependable, bilingual, production-grade frontends — and I’m deliberately building the Java, API, and cloud skills to own more of the system end to end.',
+      'I build dependable Angular systems for complex workflows, bilingual products, and high-traffic user journeys.',
     summary:
-      'Strongest on workflow-heavy products, bilingual Arabic/English interfaces with full RTL support, and frontend systems that hold up in production — not just in a demo.',
+      '4+ years delivering production frontend applications for teams in Saudi Arabia, Switzerland, and Egypt, with deep experience in reactive state, reusable UI architecture, REST integrations, and RTL/LTR delivery.',
     signals: [
       {
         label: 'Experience',
         value: '4+ years',
       },
       {
-        label: 'Current path',
-        value: 'Java + Cloud',
+        label: 'Specialization',
+        value: 'Angular + TypeScript',
       },
       {
-        label: 'Engineering goal',
-        value: 'Full-stack',
+        label: 'Engineering focus',
+        value: 'Frontend systems',
       },
     ],
   },
   about: {
     summary:
-      '4+ years and 10+ shipped projects building large-scale portals, admin dashboards, and workflow-heavy applications for teams in Saudi Arabia, Switzerland, and Egypt. I’m the person you bring in when the frontend needs to hold real complexity — reusable structure, dependable state handling, bilingual support — and still behave in production, not just in a demo.',
+      'I’m a Senior Frontend Engineer with 4+ years building production Angular applications for teams in Saudi Arabia, Switzerland, and Egypt. My strongest work combines reusable architecture, dependable reactive state, bilingual product delivery, and careful integration with backend services.',
     howIWork: [
       'Translate requirements into reusable components, scalable routing, and maintainable frontend structure.',
       'Handle loading, error, and empty states as part of the shipped user journey.',
@@ -125,14 +125,14 @@ export const portfolioData: PortfolioData = {
       'Angular delivery across portals, dashboards, onboarding flows, and workflow-heavy products.',
       'State architecture using RxJS and NgRx for async, multi-step frontend flows.',
       'Bilingual Arabic/English interfaces with RTL support and shared translation patterns.',
-      'Frontend delivery with API integration, code quality tooling, and E2E coverage.',
+      'Frontend delivery with REST API integration, production debugging, and consistent code-quality tooling.',
     ],
     productAreas: [
       'Saudi digital transformation',
       'Swiss agency products',
       'Egyptian port systems',
-      'Regulated operational workflows',
-      'Commercial platforms',
+      'Arbitration workflows',
+      'Employee-benefits platforms',
       'Admin dashboards',
       'Onboarding flows',
       'Location-based browsing',
@@ -144,67 +144,53 @@ export const portfolioData: PortfolioData = {
       summary:
         'Production Angular delivery centered on typed interfaces, reusable components, routing, and maintainable application structure.',
       items: [
-        'Angular 12-21',
+        'Angular',
         'TypeScript',
         'JavaScript',
         'Reactive Forms',
         'Angular Router',
         'Angular Material',
         'PrimeNG',
-        'Component architecture',
+        'Reusable component systems',
       ],
     },
     {
-      title: 'State, async flows, and performance',
+      title: 'State and workflows',
       summary:
         'Strongest where frontend reliability depends on good state design, reactive coordination, and predictable handling of async user flows.',
       items: [
         'NgRx',
         'RxJS',
-        'Reactive flows',
-        'Selectors and effects',
+        'Stores, selectors, and effects',
+        'Multi-step workflows',
         'Loading and error states',
-        'Signals',
-        'Release quality',
+        'Frontend performance',
+      ],
+    },
+    {
+      title: 'Product UI and integration',
+      summary:
+        'Responsive, bilingual user experiences connected to the services and location data that drive the product.',
+      items: [
+        'Responsive design',
+        'Arabic / English localization',
+        'RTL / LTR interfaces',
+        'REST APIs',
+        'Google Maps API',
+        'Location-based filtering',
+        '.NET API exposure',
       ],
     },
     {
       title: 'Quality and delivery',
       summary:
-        'Testing, integration, and release discipline support the production frontend work I already deliver.',
+        'Practical standards and debugging habits that make production frontend work easier to maintain and review.',
       items: [
-        'Playwright',
+        'Production debugging',
         'ESLint',
         'Prettier',
         'Husky',
-        'Semantic release',
-        'REST APIs',
-        'GitLab CI/CD',
-      ],
-    },
-    {
-      title: 'Backend path — actively building',
-      summary:
-        'Java is my committed backend track — from language fundamentals through Spring Boot services, REST API design, and relational data modeling.',
-      items: [
-        'Java fundamentals',
-        'Spring Boot',
-        'REST API design',
-        'SQL fundamentals',
-        'System design',
-      ],
-    },
-    {
-      title: 'Cloud path — certification-driven',
-      summary:
-        'Working toward AWS Solutions Architect, Terraform, and Kubernetes (CKAD) certifications — the operational layer that connects frontend delivery to production infrastructure.',
-      items: [
-        'AWS Solutions Architect (in progress)',
-        'Terraform Associate (in progress)',
-        'Docker',
-        'Kubernetes / CKAD (in progress)',
-        'CI/CD',
-        'Infrastructure as code',
+        'Git',
       ],
     },
   ],
@@ -214,25 +200,26 @@ export const portfolioData: PortfolioData = {
       period: 'Apr 2024 - Present',
       role: 'Frontend Engineer | Saudi digital transformation and custom software delivery',
       context:
-        'Building production frontend systems for Saudi client environments, with emphasis on reusable Angular architecture, bilingual product support, and release quality.',
+        'Building Angular products in a small team with substantial frontend ownership across employee benefits and complex arbitration workflows.',
       highlights: [
-        'Built a multi-surface commercial platform frontend from scratch across onboarding, dashboards, discovery, and routing.',
-        'Led frontend delivery for a workflow platform, including NgRx store design, selectors, and effects across 5+ modules.',
-        'Standardized bilingual Arabic/English patterns with RTL support across shared modules, supporting GCC-ready delivery.',
-        'Integrated Google Maps browsing, improved team code quality with ESLint, Prettier, and Husky, and added Playwright coverage for critical flows.',
+        'Built major parts of Tagdeer’s Angular frontend from scratch for a Saudi employee-benefits platform serving approximately 150,000 users daily.',
+        'Delivered onboarding, dashboards, offers, routing, reusable components, REST integrations, Google Maps discovery, and location-based filtering.',
+        'Implemented responsive Arabic/English interfaces with shared localization patterns and consistent RTL/LTR behavior.',
+        'Designed and maintained NgRx stores, selectors, and effects across 5+ Tahkeem business modules supporting complex asynchronous workflows.',
+        'Improved frontend standards and local quality checks using ESLint, Prettier, and Husky.',
       ],
     },
     {
       company: 'MODESO',
       period: 'Aug 2023 - Apr 2024',
-      role: 'Full-Stack Software Engineer | Swiss agency shipping web and mobile products',
+      role: 'Full-Stack Software Engineer — Frontend Focus | Swiss software agency',
       context:
         'Worked in a fast-paced agency setting, turning requirements into responsive Angular user flows and solving production reliability issues across multiple client products.',
       highlights: [
-        'Delivered reusable Angular screens and user flows end-to-end across multiple products.',
+        'Delivered responsive Angular flows and reusable UI components across multiple client products.',
         'Implemented reactive data flows with RxJS to keep forms and screens consistent during async operations.',
-        'Integrated frontend features with backend REST APIs while covering loading, empty, and error states for stable production journeys.',
-        'Root-caused complex RxJS race conditions that caused intermittent data loss in production.',
+        'Integrated frontend features with REST APIs while covering loading, empty, and error states.',
+        'Diagnosed and resolved complex RxJS race conditions that caused intermittent data loss in production.',
       ],
     },
     {
@@ -243,7 +230,7 @@ export const portfolioData: PortfolioData = {
         'Supported web application delivery inside a government digitalization programme, where release reliability and workflow accuracy mattered.',
       highlights: [
         'Translated requirements into production-ready workflow screens and reusable frontend components.',
-        'Integrated frontend flows with backend services while maintaining stable handling for loading, empty, and error states.',
+        'Integrated frontend workflows with backend services.',
         'Supported validation and test execution for key flows ahead of releases in system test environments.',
       ],
     },
@@ -251,42 +238,42 @@ export const portfolioData: PortfolioData = {
   projects: [
     {
       slug: 'commerce-platform',
-      name: 'Multi-market Commerce Platform',
+      name: 'Tagdeer Employee Benefits Platform',
       status: 'Production',
       role: 'Frontend Engineer',
       summary:
-        'Owned a commercial platform’s frontend from an empty repo to production — onboarding, dashboards, map-based discovery, and offers, fully bilingual in Arabic and English.',
+        'Built major parts of a Saudi employee-benefits platform’s Angular frontend from scratch for approximately 150,000 users daily.',
       contribution:
-        'Owned the frontend from zero, shaping reusable components, routing structure, onboarding flows, dashboard experiences, and map-driven browsing.',
+        'Delivered onboarding, dashboards, offers, reusable components, routing, REST integrations, and map-driven location discovery.',
       outcome:
-        'Delivered a production frontend with bilingual support, scalable Angular structure, and responsive location-based discovery.',
-      proofNote: 'started from a blank repo, not a template',
-      stack: ['Angular 17', 'TypeScript', 'RxJS', 'Google Maps API', 'Angular Material', 'i18n'],
+        'Supported a high-traffic production platform with responsive Arabic/English experiences and consistent RTL/LTR behavior.',
+      proofNote: 'approximately 150,000 users daily',
+      stack: ['Angular', 'TypeScript', 'RxJS', 'REST APIs', 'Google Maps API', 'i18n'],
       caseStudyIntro:
-        'The clearest proof of full-platform ownership on my resume: not one feature, but the entire UI system users touch, from first landing to daily dashboard use — in two languages.',
+        'A production Angular system where reusable structure, bilingual delivery, and location-based discovery support a large daily user base.',
       challenge:
-        'Build a large frontend from scratch while keeping onboarding, dashboards, transactional flows, and location-based browsing coherent in two languages.',
+        'Build substantial frontend functionality from scratch while keeping onboarding, dashboards, offers, and location-based discovery coherent in two languages.',
       context:
-        'Delivered for a regional product where interface clarity, responsive behavior, and bilingual support were fundamental to adoption.',
+        'Delivered in a small team for a Saudi employee-benefits product serving approximately 150,000 users daily.',
       built: [
         'Landing pages, onboarding flows, dashboard surfaces, and offer experiences.',
-        'Reusable Angular components and scalable routing to support platform growth.',
+        'Reusable Angular components and routing across core product journeys.',
         'Map browsing connected to backend search endpoints, filters, and loading states.',
       ],
       decisions: [
-        'Structured the app around reusable components and scalable routing instead of page-by-page assembly.',
+        'Structured shared interface patterns around reusable components and clear routing.',
         'Handled RTL and LTR as a core product requirement, not a late-stage patch.',
         'Connected map interactions, filters, and async search states so the browsing experience stayed responsive and legible.',
       ],
       constraints: [
         'Needed to serve Arabic and English audiences with consistent quality.',
         'Had to coordinate dashboards, forms, and location-based browsing within one coherent frontend system.',
-        'Resume source does not provide public screenshots or traffic metrics, so the case study stays grounded in implemented scope rather than invented numbers.',
+        'Needed to integrate REST data, map interactions, responsive filters, and asynchronous loading states.',
       ],
       impact: [
-        'Delivered the frontend foundation for a production commercial platform.',
-        'Enabled bilingual market reach through RTL/LTR support and shared translation patterns.',
-        'Connected responsive UI filters and Google Maps interactions into a stable browsing flow.',
+        'Built major production frontend functionality for a platform serving approximately 150,000 users daily.',
+        'Delivered consistent Arabic/English and RTL/LTR behavior across responsive product journeys.',
+        'Connected filters and Google Maps interactions to REST-backed location discovery.',
       ],
       visualLayers: [
         {
@@ -308,46 +295,46 @@ export const portfolioData: PortfolioData = {
       snapshot: [
         {
           label: 'Role',
-          value: 'Built the full frontend from scratch across user-facing and dashboard experiences.',
+          value: 'Built major parts of the Angular frontend from scratch as part of a small team.',
         },
         {
           label: 'Scope',
           value: 'Onboarding, dashboards, maps, offers, reusable components, scalable routing.',
         },
         {
-          label: 'Delivery note',
-          value: 'Bilingual Arabic/English support was treated as core architecture, not ornament.',
+          label: 'Production reach',
+          value: 'Approximately 150,000 users daily.',
         },
       ],
     },
     {
       slug: 'workflow-operations-platform',
-      name: 'Workflow Operations Platform',
+      name: 'Tahkeem Arbitration Workflow Platform',
       status: 'Production',
       role: 'Frontend Engineer',
       summary:
-        'Designed the NgRx state architecture behind a regulated workflow product — 5+ interconnected modules, async operations end to end, zero state corruption in production.',
+        'Designed and maintained NgRx stores, selectors, and effects across 5+ business modules for a complex arbitration workflow product.',
       contribution:
-        'Led frontend delivery for the workflow layer, defining store structure, selectors, effects, and optimistic updates across interconnected modules.',
+        'Structured reactive state and asynchronous coordination across interconnected, multi-step business workflows.',
       outcome:
-        'Delivered a reliable state architecture with zero state corruption in production according to the resume source.',
-      proofNote: 'zero corruption — this actually held in prod',
+        'Created predictable state boundaries for complex workflow behavior spanning more than five business modules.',
+      proofNote: 'NgRx architecture across 5+ modules',
       stack: ['Angular', 'NgRx', 'RxJS', 'TypeScript', 'REST APIs'],
       caseStudyIntro:
-        'A systems-level problem, not a UI problem: keep workflow state trustworthy across interconnected modules when everything is async and nothing is allowed to drift.',
+        'A systems-level frontend challenge: coordinate workflow state across interconnected modules with multiple asynchronous and multi-step operations.',
       challenge:
-        'Model a multi-module operational lifecycle with asynchronous actions and optimistic updates while preventing inconsistent state.',
+        'Model a multi-module arbitration lifecycle with asynchronous actions while keeping state transitions understandable and maintainable.',
       context:
-        'Built for a regulated operational environment where frontend state accuracy affected the reliability of the whole product experience.',
+        'Built for a complex arbitration product where business workflows span multiple frontend modules and asynchronous operations.',
       built: [
-        'NgRx store structure, selectors, and effects for a complex operational lifecycle.',
+        'NgRx stores, selectors, and effects for a complex arbitration lifecycle.',
         'Frontend delivery patterns across 5+ modules with multiple async operations.',
         'Workflow handling designed to keep state predictable during user actions and server responses.',
       ],
       decisions: [
         'Used explicit NgRx architecture to make ownership of state transitions clear.',
         'Relied on selectors and effects to keep cross-module data flow predictable instead of scattering logic through components.',
-        'Applied optimistic update patterns carefully to preserve speed without sacrificing correctness.',
+        'Kept asynchronous state transitions explicit so multi-step workflows remained easier to reason about.',
       ],
       constraints: [
         'Complexity came from workflow breadth across multiple modules, not from a single isolated screen.',
@@ -355,9 +342,9 @@ export const portfolioData: PortfolioData = {
         'Needed the UI to remain dependable through status changes, approvals, and updates.',
       ],
       impact: [
-        'Delivered an end-to-end frontend state architecture for a real production workflow system.',
-        'Maintained zero state corruption in production based on resume-provided evidence.',
-        'Created a stronger foundation for complex operational flows across modules.',
+        'Delivered state architecture spanning 5+ business modules.',
+        'Supported complex asynchronous and multi-step arbitration workflows.',
+        'Created clearer state ownership through dedicated stores, selectors, and effects.',
       ],
       visualLayers: [
         {
@@ -373,21 +360,21 @@ export const portfolioData: PortfolioData = {
         {
           name: 'Reliability layer',
           tag: 'Trust',
-          items: ['Optimistic updates', 'Predictable transitions', 'No corruption'],
+          items: ['Async coordination', 'Predictable transitions', 'Explicit state ownership'],
         },
       ],
       snapshot: [
         {
           label: 'Role',
-          value: 'Led the workflow-facing frontend delivery from state model to shipped behavior.',
+          value: 'Designed and maintained the NgRx state model supporting shipped workflow behavior.',
         },
         {
           label: 'Core problem',
-          value: 'Managing complex workflow state across 5+ modules without creating brittle or inconsistent UX.',
+          value: 'Managing complex arbitration workflow state across 5+ interconnected modules.',
         },
         {
-          label: 'Result',
-          value: 'Zero state corruption in production, as stated in the resume.',
+          label: 'Architecture',
+          value: 'Dedicated stores, selectors, and effects for asynchronous, multi-step flows.',
         },
       ],
     },
@@ -397,9 +384,9 @@ export const portfolioData: PortfolioData = {
       status: 'Open source',
       role: 'Library Author',
       summary:
-        'Published and maintain an open-source Angular library for HyperPay payment integration — typed, configurable, live on npm for any Angular developer to install.',
+        'Published and maintain an open-source Angular library for HyperPay COPYandPAY integration, available through npm and GitHub.',
       contribution:
-        'Created and published a reusable Angular package that wrapped payment gateway integration into a typed, configurable developer-facing library.',
+        'Created a configurable Angular package with typed input configuration and callback handling for resource paths and payment IDs.',
       outcome:
         'Turned a recurring integration need into an installable open-source package instead of a one-off implementation.',
       proofNote: 'public repo — go ahead, check the code',
@@ -407,13 +394,13 @@ export const portfolioData: PortfolioData = {
       caseStudyIntro:
         'A different kind of proof than the rest of this page: public code you can actually go read, not just a case study I’ve written about.',
       challenge:
-        'Make HyperPay integration easier for Angular developers by turning integration details into a typed, configurable package.',
+        'Make HyperPay integration easier for Angular developers by turning repeated integration work into a configurable package.',
       context:
-        'Rather than solving payment integration privately inside one product, the library was framed for reuse by the broader MENA Angular community.',
+        'Public package documentation separates browser integration from sensitive checkout creation and payment verification on the backend.',
       built: [
         'Published an Angular library for HyperPay payment gateway integration.',
-        'Designed typed APIs and configurable setup for developer usability.',
-        'Packaged the work for npm distribution as an open-source contribution.',
+        'Designed typed input configuration and callback handling for integration data.',
+        'Maintained npm packaging, unit-test infrastructure, and automated semantic releases.',
       ],
       decisions: [
         'Treated the integration as a product for developers, not just a hidden internal utility.',
@@ -434,7 +421,7 @@ export const portfolioData: PortfolioData = {
         {
           name: 'Gateway layer',
           tag: 'Payments',
-          items: ['HyperPay integration', 'Configuration', 'Typed API'],
+          items: ['COPYandPAY', 'Configuration', 'Callback handling'],
         },
         {
           name: 'Package layer',
@@ -444,7 +431,7 @@ export const portfolioData: PortfolioData = {
         {
           name: 'Community layer',
           tag: 'Reach',
-          items: ['Angular teams', 'MENA focus', 'Shared tooling'],
+          items: ['Angular teams', 'Public repository', 'Shared tooling'],
         },
       ],
       snapshot: [
@@ -477,14 +464,10 @@ export const portfolioData: PortfolioData = {
         detail: 'Arab Academy for Science, Technology & Maritime Transport, GPA 3.54 / 4 (Honours)',
       },
       {
-        label: 'Certification',
-        value: 'AWS Solutions Architect - Associate',
-        detail: 'In progress, alongside Terraform Associate and Kubernetes (CKAD).',
-      },
-      {
-        label: 'Development focus',
-        value: 'Java + Spring Boot backend',
-        detail: 'Building toward full-stack ownership: Java and Spring Boot for backend services, AWS and Terraform for infrastructure, Docker/Kubernetes for deployment.',
+        label: 'Selected open source',
+        value: 'ngx-hyperpay',
+        detail: 'Published Angular integration library available on npm and GitHub.',
+        href: 'https://github.com/MagdyAbouelnasr/ngx-hyperpay',
       },
       {
         label: 'GitHub',
@@ -509,12 +492,12 @@ export const portfolioData: PortfolioData = {
     linkedin: 'https://www.linkedin.com/in/mohamed-abouelnasr/',
     github: 'https://github.com/MagdyAbouelnasr',
     invitation:
-      'I am open to senior frontend roles and frontend-led full-stack opportunities where I can contribute immediately while growing deeper into backend and cloud ownership.',
+      'I am open to senior frontend and frontend software-engineering roles where Angular architecture, reactive state, and dependable product delivery matter.',
     preferences: [
       'Senior frontend roles with meaningful product complexity.',
-      'Frontend-led full-stack roles with room to grow backend ownership.',
+      'Products with complex workflows, bilingual interfaces, or high-traffic user journeys.',
       'Projects that need clearer workflows, stronger state architecture, or more polished UX execution.',
-      'Teams that value learning, system thinking, and dependable delivery.',
+      'Teams that value systems thinking, clear collaboration, and dependable delivery.',
     ],
   },
 }

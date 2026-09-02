@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <p className="font-medium tracking-[0.16em] text-white uppercase">Mohamed Abouelnasr</p>
           <p className="mt-2 max-w-xl">
-            Senior frontend depth, growing full-stack scope. Open to teams that value both immediate contribution and engineering growth.
+            Angular and TypeScript depth for teams that value clear systems, thoughtful product work, and dependable delivery.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">

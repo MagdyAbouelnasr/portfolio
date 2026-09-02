@@ -26,8 +26,8 @@ export function HomePage() {
   return (
     <div className="relative isolate">
       <Seo
-        description="Mohamed Abouelnasr is a senior frontend engineer expanding into Java backend and cloud engineering, with 4+ years delivering complex Angular products."
-        title="Mohamed Abouelnasr | Frontend, Full-Stack & Cloud"
+        description="Mohamed Abouelnasr is a Senior Frontend Engineer with 4+ years delivering Angular, TypeScript, RxJS, and NgRx applications."
+        title="Mohamed Abouelnasr | Senior Frontend Engineer"
       />
       <div className="relative z-10">
         <HeroSection data={portfolioData} />

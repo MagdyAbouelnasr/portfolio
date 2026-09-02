@@ -18,7 +18,7 @@ export function ExperienceSection({ experience }: ExperienceSectionProps) {
         <SectionHeading
           description="Open a role for the details. The first scan stays focused on trajectory and scope."
           eyebrow="Experience"
-          title="Four years. Three markets. Production work throughout."
+          title="4+ years. Three markets. Production work throughout."
         />
         <div className="mt-12 space-y-5">
           {experience.map((entry) => (

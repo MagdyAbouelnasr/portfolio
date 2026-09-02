@@ -1,6 +1,6 @@
 # Mohamed Abouelnasr Portfolio
 
-Production-grade personal portfolio built with React, Vite, TypeScript, Tailwind CSS, and React Router.
+Personal engineering portfolio built with React, Vite, TypeScript, Tailwind CSS, and React Router.
 
 ## Concept
 
@@ -16,13 +16,24 @@ The visual layer stays lightweight and CSS/canvas-driven (starfield, cursor glow
 - Tailwind CSS
 - React Router
 
-## Resume Mapping
+## Professional Content Sources
 
-The source of truth is the PDF resume in the project root:
+Verified professional claims are maintained in:
 
-- `cv-mohamed-abouelnasr-general-2026-04-14.pdf`
+- [`career/EXPERIENCE_FACTS.md`](./career/EXPERIENCE_FACTS.md)
 
-Its contents were extracted and mapped into typed portfolio data in:
+Content policy and future-only planning are maintained separately in:
+
+- [`RESUME_RULES.md`](./RESUME_RULES.md)
+- [`ROADMAP.md`](./ROADMAP.md)
+
+The editable resume source and its generated PDF outputs are:
+
+- [`resume-source.html`](./resume-source.html)
+- `cv-mohamed-abouelnasr.pdf`
+- `public/mohamed-abouelnasr-resume.pdf`
+
+Verified professional content is published through typed portfolio data in:
 
 - [`src/data/portfolio.ts`](./src/data/portfolio.ts)
 
@@ -35,7 +46,7 @@ That file contains:
 - featured projects
 - credentials and contact links
 
-Where the resume did not include screenshots, product metrics, or public media, the portfolio intentionally uses architecture-style placeholders and avoids inventing unsupported claims.
+Where the facts file does not verify screenshots, product metrics, or public media, the portfolio intentionally uses architecture-style placeholders and avoids inventing unsupported claims.
 
 ## Project Structure
 
@@ -72,17 +83,14 @@ npm run preview
 
 ## Hosting
 
-Currently hosted on Vercel. Netlify was dropped after a regional network-routing
-issue made the site intermittently unreachable from parts of the world
-(unrelated to the app itself — Netlify's edge IPs were affected, confirmed via
-multi-region reachability checks).
-
-Why Vercel/GitHub Pages work well here:
+The project is configured for Vercel and GitHub Pages. Both support this site
+well because:
 
 - the site is static
 - case studies already build as separate HTML entrypoints
 - the app still uses `BrowserRouter` for in-app navigation
-- both make rewrite handling easier than GitHub Pages for this setup
+- Vercel can apply the included rewrite fallback, while the GitHub Pages build
+  resolves the repository base path automatically
 
 Included deployment readiness:
 
@@ -96,6 +104,11 @@ Included deployment readiness:
 1. Import the repo in Vercel.
 2. Framework preset should detect as Vite.
 3. The included `vercel.json` handles SPA fallback routing.
+
+The current Vercel project and published address use the spelling
+`portifolio`. Renaming the Vercel project or adding a correctly spelled domain
+is an external dashboard action. Update the URLs in `src/data/portfolio.ts` and
+`resume-source.html` only after the new address is active.
 
 ### GitHub Pages
 
@@ -112,6 +125,10 @@ GitHub Pages is viable, but less forgiving for this app than Vercel.
 The main content file is:
 
 - [`src/data/portfolio.ts`](./src/data/portfolio.ts)
+
+Before changing professional content, follow [`AGENTS.md`](./AGENTS.md) and
+verify the claim in
+[`career/EXPERIENCE_FACTS.md`](./career/EXPERIENCE_FACTS.md).
 
 Update that file to:
 
