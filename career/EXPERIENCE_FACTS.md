@@ -22,8 +22,12 @@ publishing it.
 - Based in Alexandria, Egypt.
 - Time zone UTC+2, which gives full overlap with the CET working day and
   near-full overlap with Gulf working hours.
-- Open to remote engagements as a contractor or through an Employer of Record,
-  and open to relocation.
+- Open to remote engagements on a business-to-business contract basis, to
+  full-time remote roles, and to relocation.
+- Employer-of-Record arrangements are deprioritized in published copy.
+  EOR compensation is typically benchmarked to the local Egyptian market,
+  which anchors an offer below the target range. Do not advertise EOR
+  availability on the resume or portfolio.
 
 ### Verified work arrangements
 

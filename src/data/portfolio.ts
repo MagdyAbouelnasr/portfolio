@@ -92,7 +92,7 @@ export const navigationItems = [
 export const portfolioData: PortfolioData = {
   hero: {
     name: 'Mohamed Abouelnasr',
-    role: 'Senior Frontend Engineer | Angular, TypeScript, RxJS & NgRx',
+    role: 'Senior Frontend Engineer | Angular Specialist: NgRx & RxJS Architecture, Bilingual RTL/LTR Delivery',
     location: 'Alexandria, Egypt · UTC+2',
     valueStatement:
       'I build dependable Angular systems for complex workflows, bilingual products, and high-traffic user journeys.',
@@ -105,7 +105,7 @@ export const portfolioData: PortfolioData = {
       },
       {
         label: 'Specialization',
-        value: 'Angular + TypeScript',
+        value: 'Angular, NgRx, RxJS',
       },
       {
         label: 'Engineering focus',
@@ -492,7 +492,7 @@ export const portfolioData: PortfolioData = {
     linkedin: 'https://www.linkedin.com/in/mohamed-abouelnasr/',
     github: 'https://github.com/MagdyAbouelnasr',
     invitation:
-      'I am open to senior frontend and frontend software-engineering roles where Angular architecture, reactive state, and dependable product delivery matter. I have been delivering remotely to a Saudi team since April 2024, work comfortably across European and Gulf time zones, and am open to contract, Employer of Record, or relocation arrangements.',
+      'I am open to senior frontend and frontend software-engineering roles where Angular architecture, reactive state, and dependable product delivery matter. I have been delivering remotely to a Saudi team since April 2024, work comfortably across European and Gulf time zones, and am open to contract, full-time, or relocation arrangements.',
     preferences: [
       'Senior frontend roles with meaningful product complexity.',
       'Products with complex workflows, bilingual interfaces, or high-traffic user journeys.',
